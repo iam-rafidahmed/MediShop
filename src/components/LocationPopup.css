@@ -1,0 +1,196 @@
+.location-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.location-popup-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.location-popup-light {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.location-popup-content-full {
+  padding: 1.25rem;
+  overflow-y: auto;
+}
+
+.selected-location-info {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-left: 4px solid #4caf50;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.location-icon {
+  color: #4caf50;
+  margin-right: 12px;
+  font-size: 1.4rem;
+}
+
+.button-icon {
+  margin-right: 8px;
+}
+
+.location-map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-popup-footer {
+  padding: 1.25rem;
+  border-top: 1px solid #e8f5e9;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.select-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+.select-button:hover:not(:disabled) {
+  background-color: #388e3c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.select-button:disabled {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+  color: #81c784;
+}
+
+/* Store popup styles */
+.store-popup {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 10px;
+}
+
+.store-icon {
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+.store-status {
+  color: #4caf50;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 8px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+}
+
+/* Fix for Leaflet map container */
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  min-width: 200px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .location-popup-container {
+    width: 95%;
+    max-height: 95vh;
+    margin: 10px;
+  }
+  
+  .location-map-container {
+    height: auto;
+  }
+  
+  .leaflet-container {
+    height: 300px;
+  }
+
+  .selected-location-info {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .select-button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .map-instructions {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
+}
+
+/* Animation for the green circles */
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+}
+
+.leaflet-circle-marker {
+  animation: pulse 2s ease-in-out infinite;
+} 
