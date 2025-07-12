@@ -5,21 +5,21 @@ const FitnessCategory = () => {
   const dummyProducts = [
     {
       id: 'fit1',
-      name: 'Resistance Band Set',
-      description: 'Complete set of resistance bands with workout guide',
-      price: 999.99,
+      name: 'Fitness Tracker Pro',
+      description: 'Advanced fitness tracker with heart rate monitoring and sleep analysis',
+      price: 3499.99,
       image: '/images/products/product-1.jpg',
-      stock: 65,
-      manufacturer: 'FitPro'
+      stock: 50,
+      manufacturer: 'FitTech'
     },
     {
       id: 'fit2',
-      name: 'Protein Bundle',
-      description: 'Premium whey protein with BCAA supplements',
-      price: 2499.99,
+      name: 'Protein Powder',
+      description: 'Whey protein isolate for muscle recovery and growth',
+      price: 1999.99,
       image: '/images/products/product-2.jpg',
-      stock: 40,
-      manufacturer: 'NutriTech'
+      stock: 100,
+      manufacturer: 'NutriPower'
     }
   ];
 
@@ -32,8 +32,6 @@ const FitnessCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="manufacturer">By {product.manufacturer}</p>
-              <p className="stock">In Stock: {product.stock}</p>
               <p className="price">₹{product.price}</p>
               <button className="add-to-cart">Add to Cart</button>
             </div>

@@ -59,11 +59,6 @@ const Home = () => {
                 <div className="medicine-info">
                   <h3>{medicine.name}</h3>
                   <p className="medicine-description">{medicine.description}</p>
-                  <div className="medicine-rating">
-                    <span className="stars">{'★'.repeat(Math.floor(medicine.rating))}{'☆'.repeat(5-Math.floor(medicine.rating))}</span>
-                    <span className="rating-number">{medicine.rating}</span>
-                    <span className="review-count">({medicine.reviews})</span>
-                  </div>
                   <div className="medicine-price">
                     <span className="price">{medicine.price}</span>
                     <Link to={`/product/${medicine.id}`} className="buy-btn">Buy Now</Link>

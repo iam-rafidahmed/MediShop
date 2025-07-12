@@ -5,21 +5,21 @@ const HealthHygieneCategory = () => {
   const dummyProducts = [
     {
       id: 'hyg1',
-      name: 'Advanced Hand Sanitizer',
-      description: '99.9% germ protection with moisturizing formula',
-      price: 199.99,
-      image: '/images/products/product-3.jpg',
+      name: 'Hand Sanitizer Pack',
+      description: 'Pack of 3 travel-sized hand sanitizers with 70% alcohol',
+      price: 299.99,
+      image: '/images/products/product-1.jpg',
       stock: 200,
-      manufacturer: 'PureProtect'
+      manufacturer: 'PureHands'
     },
     {
       id: 'hyg2',
-      name: 'Antibacterial Body Wash',
-      description: 'pH balanced body wash with natural ingredients',
-      price: 299.99,
-      image: '/images/products/product-4.jpg',
+      name: 'Disinfectant Spray',
+      description: 'Multi-surface disinfectant spray that kills 99.9% of germs',
+      price: 349.99,
+      image: '/images/products/product-2.jpg',
       stock: 150,
-      manufacturer: 'HygieneFirst'
+      manufacturer: 'CleanPro'
     }
   ];
 
@@ -32,8 +32,6 @@ const HealthHygieneCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="manufacturer">By {product.manufacturer}</p>
-              <p className="stock">In Stock: {product.stock}</p>
               <p className="price">₹{product.price}</p>
               <button className="add-to-cart">Add to Cart</button>
             </div>

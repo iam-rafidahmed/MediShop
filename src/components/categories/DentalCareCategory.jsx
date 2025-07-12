@@ -5,21 +5,21 @@ const DentalCareCategory = () => {
   const dummyProducts = [
     {
       id: 'dent1',
-      name: 'Electric Toothbrush Pro',
-      description: 'Smart sonic toothbrush with multiple cleaning modes',
-      price: 2999.99,
-      image: '/images/products/product-3.jpg',
+      name: 'Electric Toothbrush',
+      description: 'Rechargeable sonic toothbrush with multiple cleaning modes',
+      price: 1999.99,
+      image: '/images/products/product-1.jpg',
       stock: 45,
-      manufacturer: 'DentalTech'
+      manufacturer: 'OralCare Pro'
     },
     {
       id: 'dent2',
-      name: 'Premium Dental Floss',
-      description: 'Mint-flavored waxed dental floss for thorough cleaning',
+      name: 'Sensitive Toothpaste',
+      description: 'Specialized toothpaste for sensitive teeth and gums',
       price: 199.99,
-      image: '/images/products/product-4.jpg',
-      stock: 150,
-      manufacturer: 'OralCare Plus'
+      image: '/images/products/product-2.jpg',
+      stock: 120,
+      manufacturer: 'DentaSense'
     }
   ];
 
@@ -32,8 +32,6 @@ const DentalCareCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="manufacturer">By {product.manufacturer}</p>
-              <p className="stock">In Stock: {product.stock}</p>
               <p className="price">₹{product.price}</p>
               <button className="add-to-cart">Add to Cart</button>
             </div>

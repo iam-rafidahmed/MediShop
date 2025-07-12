@@ -32,8 +32,6 @@ const FirstAidCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="manufacturer">By {product.manufacturer}</p>
-              <p className="stock">In Stock: {product.stock}</p>
               <p className="price">₹{product.price}</p>
               <button className="add-to-cart">Add to Cart</button>
             </div>

@@ -6,20 +6,20 @@ const LifestyleCategory = () => {
     {
       id: 'life1',
       name: 'Aromatherapy Diffuser',
-      description: 'Smart essential oil diffuser with LED mood lighting',
-      price: 1999.99,
+      description: 'Essential oil diffuser with LED mood lighting',
+      price: 1299.99,
       image: '/images/products/product-1.jpg',
-      stock: 35,
-      manufacturer: 'AromaLife'
+      stock: 40,
+      manufacturer: 'AromaWell'
     },
     {
       id: 'life2',
-      name: 'Sleep Aid Kit',
-      description: 'Natural sleep supplements and eye mask set',
-      price: 899.99,
+      name: 'Sleep Aid Mask',
+      description: 'Contoured blackout sleep mask with memory foam',
+      price: 599.99,
       image: '/images/products/product-2.jpg',
-      stock: 55,
-      manufacturer: 'SleepWell'
+      stock: 85,
+      manufacturer: 'DreamSleep'
     }
   ];
 
@@ -32,8 +32,6 @@ const LifestyleCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="manufacturer">By {product.manufacturer}</p>
-              <p className="stock">In Stock: {product.stock}</p>
               <p className="price">₹{product.price}</p>
               <button className="add-to-cart">Add to Cart</button>
             </div>
