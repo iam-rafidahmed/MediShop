@@ -32,8 +32,8 @@ const PrescribeMedicineCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">₹{product.price}</p>
-              <button className="add-to-cart">Upload Prescription</button>
+              <p className="price">Tk {product.price}</p>
+              <button className="add-to-cart">Add to Cart</button>
             </div>
           </div>
         ))}

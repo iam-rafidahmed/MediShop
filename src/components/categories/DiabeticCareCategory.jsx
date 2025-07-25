@@ -20,6 +20,33 @@ const DiabeticCareCategory = () => {
       image: '/images/products/product-4.jpg',
       stock: 120,
       manufacturer: 'HealthWear Plus'
+    },
+    {
+      id: 'diab3',
+      name: 'Metformin 500mg',
+      description: 'Oral diabetes medicine to control blood sugar levels',
+      price: 350.00,
+      image: '/images/products/product-5.jpg',
+      stock: 200,
+      manufacturer: 'Square Pharmaceuticals'
+    },
+    {
+      id: 'diab4',
+      name: 'Insulin Pen Needles',
+      description: 'Ultra-fine needles for insulin delivery',
+      price: 420.75,
+      image: '/images/products/product-6.jpg',
+      stock: 150,
+      manufacturer: 'BD Medical'
+    },
+    {
+      id: 'diab5',
+      name: 'Diabetic Foot Cream',
+      description: 'Specialized moisturizing cream for diabetic foot care',
+      price: 275.50,
+      image: '/images/products/product-7.jpg',
+      stock: 80,
+      manufacturer: 'DermaCare'
     }
   ];
 
@@ -32,7 +59,7 @@ const DiabeticCareCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">₹{product.price}</p>
+              <p className="price">Tk {product.price}</p>
               <button className="add-to-cart">Add to Cart</button>
             </div>
           </div>
