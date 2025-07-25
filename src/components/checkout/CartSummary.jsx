@@ -16,7 +16,7 @@ const CartSummary = () => {
                 <span className="item-name">{item.name}</span>
                 <span className="item-quantity">x {item.quantity}</span>
               </div>
-              <span className="item-price">₹{(item.price * item.quantity).toFixed(2)}</span>
+              <span className="item-price">Tk {(item.price * item.quantity).toFixed(2)}</span>
             </div>
           ))}
         </div>
@@ -28,7 +28,7 @@ const CartSummary = () => {
       
       <div className="cart-total">
         <span>Total:</span>
-        <span>₹{cartTotal ? cartTotal.toFixed(2) : '0.00'}</span>
+        <span>Tk {cartTotal ? cartTotal.toFixed(2) : '0.00'}</span>
       </div>
     </div>
   );
