@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const HealthcareDevicesCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
-      id: 'dev1',
-      name: 'Smart BP Monitor',
-      description: 'Bluetooth-enabled blood pressure monitor with app connectivity',
-      price: 3999.99,
+      id: 'device1',
+      name: 'Digital BP Monitor',
+      description: 'Accurate blood pressure monitor with large display',
+      price: 1999.99,
       image: '/images/products/product-1.jpg',
-      stock: 30,
-      manufacturer: 'TechMed Devices'
+      stock: 35,
+      manufacturer: 'HealthTech'
     },
     {
-      id: 'dev2',
-      name: 'Digital Thermometer Pro',
-      description: 'Infrared non-contact thermometer with LCD display',
-      price: 1299.99,
+      id: 'device2',
+      name: 'Nebulizer Machine',
+      description: 'Portable nebulizer for respiratory medication delivery',
+      price: 2499.99,
       image: '/images/products/product-2.jpg',
-      stock: 85,
-      manufacturer: 'HealthTech Solutions'
+      stock: 20,
+      manufacturer: 'MediBreath'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const HealthcareDevicesCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

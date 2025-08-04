@@ -106,19 +106,13 @@ const Home = () => {
                 <div className="medicine-info">
                   <h3>{medicine.name}</h3>
                   <p className="medicine-description">{medicine.description}</p>
-                  <div className="medicine-price">
-                    <span className="price">Tk {medicine.price.toFixed(2)}</span>
-                    <div className="medicine-actions">
-                      <Link to={`/product/${medicine.id}`} className="view-btn">View</Link>
-                      <button 
-                        className="cart-btn"
-                        onClick={() => handleAddToCart(medicine)}
-                      >
-                        <FaShoppingCart className="cart-icon" />
-                        Add to Cart
-                      </button>
-                    </div>
-                  </div>
+                  <p className="price">Tk {medicine.price.toFixed(2)}</p>
+                  <button 
+                    className="add-to-cart"
+                    onClick={() => handleAddToCart(medicine)}
+                  >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             ))}
@@ -135,23 +129,17 @@ const Home = () => {
               <div key={medicine.id} className="medicine-card">
                 <div className="medicine-image">
                   <img src={medicine.image} alt={medicine.name} />
-                </div>
+                  </div>
                 <div className="medicine-info">
                   <h3>{medicine.name}</h3>
                   <p className="medicine-description">{medicine.description}</p>
-                  <div className="medicine-price">
-                    <span className="price">Tk {medicine.price.toFixed(2)}</span>
-                    <div className="medicine-actions">
-                      <Link to={`/product/${medicine.id}`} className="view-btn">View</Link>
-                      <button 
-                        className="cart-btn"
-                        onClick={() => handleAddToCart(medicine)}
-                      >
-                        <FaShoppingCart className="cart-icon" />
-                        Add to Cart
-                      </button>
-                    </div>
-                  </div>
+                  <p className="price">Tk {medicine.price.toFixed(2)}</p>
+                  <button 
+                    className="add-to-cart"
+                    onClick={() => handleAddToCart(medicine)}
+                  >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             ))}

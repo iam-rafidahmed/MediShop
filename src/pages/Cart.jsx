@@ -16,13 +16,6 @@ const Cart = () => {
   return (
     <div className="cart-page">
       <div className="cart-header">
-        <button className="close-button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10" />
-            <line x1="15" y1="9" x2="9" y2="15" />
-            <line x1="9" y1="9" x2="15" y2="15" />
-          </svg>
-        </button>
         <h1>Cart Item</h1>
       </div>
 
@@ -61,19 +54,16 @@ const Cart = () => {
                       </button>
                     </div>
                     <div className="item-price">
-                      {item.price.toFixed(2)}
+                      Tk {(item.price * item.quantity).toFixed(2)}
                     </div>
+                    <button 
+                      className="remove-btn" 
+                      onClick={() => removeItem(item.id)}
+                    >
+                      Remove
+                    </button>
                   </div>
                 </div>
-                <button 
-                  className="remove-item" 
-                  onClick={() => removeItem(item.id)}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="3 6 5 6 21 6" />
-                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-                  </svg>
-                </button>
               </div>
             ))}
           </div>
@@ -84,7 +74,7 @@ const Cart = () => {
             </div>
             <div className="cart-total">
               <span>Cart Total:</span>
-              <span className="total-amount">{cartTotal.toFixed(2)}</span>
+              <span className="total-amount">Tk {cartTotal.toFixed(2)}</span>
             </div>
             <button className="checkout-btn" onClick={handleCheckout}>Proceed to checkout</button>
           </div>

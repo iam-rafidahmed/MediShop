@@ -57,7 +57,7 @@ const OTCMedicineCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
               <button 
                 className="add-to-cart"
                 onClick={() => handleAddToCart(product)}

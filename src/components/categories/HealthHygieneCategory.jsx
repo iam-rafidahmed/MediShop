@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const HealthHygieneCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
       id: 'hyg1',
-      name: 'Hand Sanitizer Pack',
-      description: 'Pack of 3 travel-sized hand sanitizers with 70% alcohol',
-      price: 299.99,
+      name: 'Hand Sanitizer',
+      description: 'Alcohol-based hand sanitizer with moisturizing formula',
+      price: 199.99,
       image: '/images/products/product-1.jpg',
-      stock: 200,
-      manufacturer: 'PureHands'
+      stock: 150,
+      manufacturer: 'CleanHands'
     },
     {
       id: 'hyg2',
-      name: 'Disinfectant Spray',
-      description: 'Multi-surface disinfectant spray that kills 99.9% of germs',
-      price: 349.99,
+      name: 'Face Masks Pack',
+      description: 'Pack of 50 disposable 3-ply face masks',
+      price: 499.99,
       image: '/images/products/product-2.jpg',
-      stock: 150,
-      manufacturer: 'CleanPro'
+      stock: 100,
+      manufacturer: 'SafeBreath'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const HealthHygieneCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

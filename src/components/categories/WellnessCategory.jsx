@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const WellnessCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
       id: 'well1',
-      name: 'Yoga Mat Premium',
-      description: 'High-density non-slip yoga mat with carrying strap',
-      price: 1499.99,
+      name: 'Multivitamin Complex',
+      description: 'Complete daily multivitamin with minerals',
+      price: 599.99,
       image: '/images/products/product-1.jpg',
-      stock: 40,
-      manufacturer: 'YogaLife'
+      stock: 120,
+      manufacturer: 'VitaWell'
     },
     {
       id: 'well2',
-      name: 'Meditation Cushion Set',
-      description: 'Ergonomic meditation cushion with back support',
-      price: 999.99,
+      name: 'Omega-3 Fish Oil',
+      description: 'High-potency omega-3 fatty acids supplement',
+      price: 449.99,
       image: '/images/products/product-2.jpg',
-      stock: 60,
-      manufacturer: 'MindfulLiving'
+      stock: 90,
+      manufacturer: 'NutriLife'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const WellnessCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

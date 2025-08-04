@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const FirstAidCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
       id: 'aid1',
-      name: 'Emergency First Aid Kit',
-      description: 'Complete first aid kit with 100+ essential items',
-      price: 1499.99,
+      name: 'First Aid Kit',
+      description: 'Complete emergency kit with essential medical supplies',
+      price: 799.99,
       image: '/images/products/product-1.jpg',
       stock: 50,
       manufacturer: 'SafetyFirst'
     },
     {
       id: 'aid2',
-      name: 'Burn Relief Gel',
-      description: 'Instant cooling gel for minor burns and scalds',
+      name: 'Antiseptic Solution',
+      description: 'Medical-grade antiseptic for wound cleaning',
       price: 249.99,
       image: '/images/products/product-2.jpg',
-      stock: 120,
-      manufacturer: 'MediRelief'
+      stock: 100,
+      manufacturer: 'MediClean'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const FirstAidCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

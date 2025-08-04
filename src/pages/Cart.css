@@ -21,25 +21,6 @@
   font-weight: 600;
 }
 
-.close-button {
-  position: absolute;
-  left: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.close-button svg {
-  width: 24px;
-  height: 24px;
-  color: #ff4b4b;
-}
-
 .cart-items-container {
   flex-grow: 1;
   overflow-y: auto;
@@ -90,6 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 
 .quantity-controls {
@@ -125,23 +107,23 @@
 .item-price {
   font-size: 18px;
   font-weight: 600;
+  min-width: 100px;
+  text-align: right;
 }
 
-.remove-item {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
+.remove-btn {
+  background-color: #ff4b4b;
+  color: white;
   border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  transition: background-color 0.3s;
 }
 
-.remove-item svg {
-  width: 100%;
-  height: 100%;
-  color: #ff4b4b;
+.remove-btn:hover {
+  background-color: #e04141;
 }
 
 .cart-footer {
@@ -236,17 +218,25 @@
     margin-bottom: 10px;
   }
   
-  .remove-item {
-    top: 15px;
-    right: 15px;
-  }
-  
   .item-actions {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    width: 100%;
   }
   
   .quantity-controls {
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .item-price {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .remove-btn {
+    width: 100%;
   }
 } 

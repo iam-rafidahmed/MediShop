@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const ElderlyCareCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
-      id: 'elderly1',
+      id: 'elder1',
       name: 'Walking Cane',
-      description: 'Adjustable height walking cane with ergonomic handle',
+      description: 'Adjustable height walking cane with comfortable grip',
       price: 899.99,
       image: '/images/products/product-1.jpg',
-      stock: 35,
+      stock: 40,
       manufacturer: 'MobilityPlus'
     },
     {
-      id: 'elderly2',
+      id: 'elder2',
       name: 'Pill Organizer',
       description: 'Weekly pill organizer with AM/PM compartments',
-      price: 399.99,
+      price: 349.99,
       image: '/images/products/product-2.jpg',
-      stock: 80,
+      stock: 65,
       manufacturer: 'MediOrganize'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const ElderlyCareCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

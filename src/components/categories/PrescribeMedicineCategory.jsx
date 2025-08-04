@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const PrescribeMedicineCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
       id: 'pres1',
       name: 'Amoxicillin 500mg',
-      description: 'Antibiotic for bacterial infections (Prescription Required)',
+      description: 'Antibiotic capsules (Prescription Required)',
       price: 299.99,
       image: '/images/products/product-1.jpg',
-      stock: 80,
-      manufacturer: 'PharmaCare Labs'
+      stock: 100,
+      manufacturer: 'PharmaCure'
     },
     {
       id: 'pres2',
-      name: 'Metformin 850mg',
-      description: 'Diabetes medication (Prescription Required)',
-      price: 199.99,
+      name: 'Lisinopril 10mg',
+      description: 'Blood pressure medication tablets (Prescription Required)',
+      price: 249.99,
       image: '/images/products/product-2.jpg',
-      stock: 120,
-      manufacturer: 'DiabeCare Pharma'
+      stock: 150,
+      manufacturer: 'MediHealth'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const PrescribeMedicineCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

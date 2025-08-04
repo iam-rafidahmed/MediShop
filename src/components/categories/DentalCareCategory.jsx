@@ -1,7 +1,10 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const DentalCareCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
       id: 'dent1',
@@ -23,6 +26,10 @@ const DentalCareCategory = () => {
     }
   ];
 
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
+
   return (
     <div className="category-container">
       <div className="products-grid">
@@ -32,8 +39,13 @@ const DentalCareCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}

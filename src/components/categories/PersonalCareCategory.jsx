@@ -1,27 +1,34 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './CategoryStyles.css';
 
 const PersonalCareCategory = () => {
+  const { addToCart } = useCart();
+  
   const dummyProducts = [
     {
-      id: 'pc1',
-      name: 'Skin Care Kit',
-      description: 'Complete skincare routine package with cleanser, toner, and moisturizer',
-      price: 1299.99,
+      id: 'care1',
+      name: 'Facial Cleanser',
+      description: 'Gentle pH-balanced facial cleanser for all skin types',
+      price: 399.99,
       image: '/images/products/product-1.jpg',
-      stock: 50,
+      stock: 80,
       manufacturer: 'DermaCare'
     },
     {
-      id: 'pc2',
-      name: 'Hair Care Bundle',
-      description: 'Premium shampoo and conditioner set for all hair types',
-      price: 899.99,
+      id: 'care2',
+      name: 'Moisturizing Lotion',
+      description: '24-hour hydration body lotion with natural oils',
+      price: 349.99,
       image: '/images/products/product-2.jpg',
-      stock: 75,
-      manufacturer: 'HairPro'
+      stock: 100,
+      manufacturer: 'SkinEssentials'
     }
   ];
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+  };
 
   return (
     <div className="category-container">
@@ -32,8 +39,13 @@ const PersonalCareCategory = () => {
             <div className="product-details">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
-              <p className="price">Tk {product.price}</p>
-              <button className="add-to-cart">Add to Cart</button>
+              <p className="price">Tk {product.price.toFixed(2)}</p>
+              <button 
+                className="add-to-cart"
+                onClick={() => handleAddToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}
