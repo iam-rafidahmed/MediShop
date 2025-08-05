@@ -50,6 +50,97 @@ const DiabeticCareCategory = () => {
       image: '/images/products/product-7.jpg',
       stock: 80,
       manufacturer: 'DermaCare'
+    },
+    // Adding 10 more products
+    {
+      id: 'diab6',
+      name: 'Glucose Test Strips',
+      description: 'Compatible test strips for glucose monitors',
+      price: 850.00,
+      image: '/images/products/product-1.jpg',
+      stock: 300,
+      manufacturer: 'OneTouch'
+    },
+    {
+      id: 'diab7',
+      name: 'Insulin Cooling Case',
+      description: 'Portable case to keep insulin at optimal temperature',
+      price: 1200.50,
+      image: '/images/products/product-2.jpg',
+      stock: 40,
+      manufacturer: 'FRIO'
+    },
+    {
+      id: 'diab8',
+      name: 'Diabetic Multivitamin',
+      description: 'Specialized vitamin supplement for diabetic patients',
+      price: 450.75,
+      image: '/images/products/product-3.jpg',
+      stock: 120,
+      manufacturer: 'Nature Made'
+    },
+    {
+      id: 'diab9',
+      name: 'Sugar-Free Cookies',
+      description: 'Delicious cookies safe for diabetic patients',
+      price: 180.00,
+      image: '/images/products/product-4.jpg',
+      stock: 75,
+      manufacturer: 'Healthy Bites'
+    },
+    {
+      id: 'diab10',
+      name: 'Lancet Device',
+      description: 'Adjustable depth lancet device for comfortable blood sampling',
+      price: 750.25,
+      image: '/images/products/product-5.jpg',
+      stock: 60,
+      manufacturer: 'Accu-Chek'
+    },
+    {
+      id: 'diab11',
+      name: 'Diabetic Meal Replacement',
+      description: 'Balanced nutrition shake for diabetic patients',
+      price: 520.00,
+      image: '/images/products/product-6.jpg',
+      stock: 90,
+      manufacturer: 'Glucerna'
+    },
+    {
+      id: 'diab12',
+      name: 'Insulin Travel Bag',
+      description: 'Insulated bag for carrying insulin and supplies',
+      price: 950.50,
+      image: '/images/products/product-7.jpg',
+      stock: 35,
+      manufacturer: 'MediBag'
+    },
+    {
+      id: 'diab13',
+      name: 'Diabetic Foot Massager',
+      description: 'Electric foot massager designed for diabetic neuropathy',
+      price: 3500.00,
+      image: '/images/products/product-1.jpg',
+      stock: 25,
+      manufacturer: 'ComfortPlus'
+    },
+    {
+      id: 'diab14',
+      name: 'Continuous Glucose Monitor',
+      description: 'Advanced CGM system for real-time glucose monitoring',
+      price: 12000.00,
+      image: '/images/products/product-2.jpg',
+      stock: 15,
+      manufacturer: 'Dexcom'
+    },
+    {
+      id: 'diab15',
+      name: 'Diabetic Skin Lotion',
+      description: 'Non-greasy lotion for sensitive diabetic skin',
+      price: 320.25,
+      image: '/images/products/product-3.jpg',
+      stock: 70,
+      manufacturer: 'CeraVe'
     }
   ];
 
@@ -81,4 +172,4 @@ const DiabeticCareCategory = () => {
   );
 };
 
-export default DiabeticCareCategory; 
+export default DiabeticCareCategory;

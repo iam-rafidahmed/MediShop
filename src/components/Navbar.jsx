@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaMapMarkerAlt, FaSearch, FaShoppingCart, FaUser, FaBars, FaTimes, FaClinicMedical, FaPills, FaStethoscope, FaFirstAid, FaHospital, FaAmbulance, FaPrescriptionBottleAlt, FaTooth, FaBaby, FaSprayCan, FaHeartbeat, FaPrescription } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
+import { useSearch } from '../context/SearchContext';
 import LocationPopup from './LocationPopup';
 import './Navbar.css';
 
@@ -11,7 +12,9 @@ const Navbar = () => {
   const [showFirstAidDropdown, setShowFirstAidDropdown] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const { itemCount } = useCart();
+  const { searchProducts } = useSearch();
   const location = useLocation();
+  const navigate = useNavigate();
   const isHomePage = location.pathname === '/';
   const firstAidRef = useRef(null);
   const searchInputRef = useRef(null);
@@ -48,8 +51,8 @@ const Navbar = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Handle search submission
-    console.log('Search query:', searchQuery);
+    searchProducts(searchQuery);
+    navigate('/search');
   };
 
   // Close dropdown when clicking outside
