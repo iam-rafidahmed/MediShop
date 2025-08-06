@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart, FaHeart, FaDumbbell, FaUserFriends, FaFirstAid, FaBaby } from 'react-icons/fa';
 import PopularHospitals from '../components/PopularHospitals';
 import WhyChooseUs from '../components/WhyChooseUs';
 import { useCart } from '../context/CartContext';
@@ -8,6 +8,23 @@ import './Home.css';
 
 const Home = () => {
   const { addToCart } = useCart();
+  
+  // Slideshow state
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    { src: "/images/promotions/maxpro.png", alt: "Maxpro" },
+    { src: "/images/promotions/monas.png", alt: "Monas" },
+    { src: "/images/promotions/rolac.jpg", alt: "Rolac" }
+  ];
+
+  // Auto-advance slideshow
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
   
   const popularMedicines = [
     {
@@ -44,6 +61,42 @@ const Home = () => {
       price: 87.50,
       rating: 4.6,
       reviews: 1670,
+      image: "/images/products/product-4.jpg"
+    },
+    {
+      id: 9,
+      name: "Azithral 500",
+      description: "Azithromycin Tablets",
+      price: 120.00,
+      rating: 4.7,
+      reviews: 1850,
+      image: "/images/products/product-1.jpg"
+    },
+    {
+      id: 10,
+      name: "Montek LC",
+      description: "Levocetirizine & Montelukast",
+      price: 165.00,
+      rating: 4.5,
+      reviews: 1320,
+      image: "/images/products/product-2.jpg"
+    },
+    {
+      id: 11,
+      name: "Limcee",
+      description: "Vitamin C Chewable Tablets",
+      price: 45.00,
+      rating: 4.8,
+      reviews: 2100,
+      image: "/images/products/product-3.jpg"
+    },
+    {
+      id: 12,
+      name: "Becosules",
+      description: "B-Complex Capsules",
+      price: 75.00,
+      rating: 4.7,
+      reviews: 1950,
       image: "/images/products/product-4.jpg"
     }
   ];
@@ -95,25 +148,67 @@ const Home = () => {
     <div className="home-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h2 className="section-title">Users' Choice</h2>
+          <h2 className="section-title">Top Picks for You</h2>
           <p className="section-subtitle">Most trusted medicines by our customers</p>
-          <div className="medicine-grid">
-            {popularMedicines.map((medicine) => (
-              <div key={medicine.id} className="medicine-card">
-                <div className="medicine-image">
-                  <img src={medicine.image} alt={medicine.name} />
+          <div className="auto-scroll-container">
+            <div className="auto-scroll-content">
+              {popularMedicines.map((medicine) => (
+                <div key={medicine.id} className="medicine-card">
+                  <div className="medicine-image">
+                    <img src={medicine.image} alt={medicine.name} />
+                  </div>
+                  <div className="medicine-info">
+                    <h3>{medicine.name}</h3>
+                    <p className="medicine-description">{medicine.description}</p>
+                    <p className="price">Tk {medicine.price.toFixed(2)}</p>
+                    <button 
+                      className="add-to-cart"
+                      onClick={() => handleAddToCart(medicine)}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
-                <div className="medicine-info">
-                  <h3>{medicine.name}</h3>
-                  <p className="medicine-description">{medicine.description}</p>
-                  <p className="price">Tk {medicine.price.toFixed(2)}</p>
-                  <button 
-                    className="add-to-cart"
-                    onClick={() => handleAddToCart(medicine)}
-                  >
-                    Add to Cart
-                  </button>
+              ))}
+              {/* Duplicate the first few items for continuous scrolling */}
+              {popularMedicines.slice(0, 4).map((medicine) => (
+                <div key={`dup-${medicine.id}`} className="medicine-card">
+                  <div className="medicine-image">
+                    <img src={medicine.image} alt={medicine.name} />
+                  </div>
+                  <div className="medicine-info">
+                    <h3>{medicine.name}</h3>
+                    <p className="medicine-description">{medicine.description}</p>
+                    <p className="price">Tk {medicine.price.toFixed(2)}</p>
+                    <button 
+                      className="add-to-cart"
+                      onClick={() => handleAddToCart(medicine)}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Slideshow Section */}
+      <section className="image-slideshow-section">
+        <div className="slideshow-content">
+          <div className="slideshow-text">
+            <h2 className="trusted-title">Trusted by</h2>
+            <h1 className="trusted-subtitle">thousands of customers</h1>
+            <div className="trusted-accent"></div>
+          </div>
+          <div className="slideshow-container">
+            {slides.map((slide, index) => (
+              <div 
+                key={index}
+                className={`slideshow-image ${index === currentSlide ? 'active' : ''}`}
+              >
+                <img src={slide.src} alt={slide.alt} />
               </div>
             ))}
           </div>
@@ -151,21 +246,39 @@ const Home = () => {
         <h2>Shop by Category</h2>
         <div className="categories-grid">
           <Link to="/category/personal-care" className="category-card">
+            <div className="category-icon">
+              <FaHeart />
+            </div>
             <h3>Personal Care</h3>
           </Link>
           <Link to="/category/wellness" className="category-card">
+            <div className="category-icon">
+              <FaUserFriends />
+            </div>
             <h3>Wellness</h3>
           </Link>
           <Link to="/category/lifestyle" className="category-card">
+            <div className="category-icon">
+              <FaHeart />
+            </div>
             <h3>Lifestyle</h3>
           </Link>
           <Link to="/category/fitness" className="category-card">
+            <div className="category-icon">
+              <FaDumbbell />
+            </div>
             <h3>Fitness</h3>
           </Link>
           <Link to="/category/elderly-care" className="category-card">
+            <div className="category-icon">
+              <FaUserFriends />
+            </div>
             <h3>Elderly Care</h3>
           </Link>
           <Link to="/category/first-aid" className="category-card">
+            <div className="category-icon">
+              <FaFirstAid />
+            </div>
             <h3>First Aid</h3>
           </Link>
         </div>
