@@ -297,13 +297,7 @@
   margin-bottom: 1.5rem;
 }
 
-.featured-accent {
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, #10847e, #2e7d32);
-  border-radius: 2px;
-  margin-top: 1rem;
-}
+
 
 .left-image, .right-image {
   flex: 1;
@@ -442,9 +436,7 @@
     font-size: 0.9rem;
   }
 
-  .featured-accent {
-    margin: 1rem auto 0 auto;
-  }
+
 
 
 }

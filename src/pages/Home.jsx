@@ -318,7 +318,6 @@ const Home = () => {
             We bring you the best selection of trusted medicines to keep you always prepared and protected.
             Choose the right medicine for your needs — start your journey to better health today.
             </p>
-            <div className="featured-accent"></div>
           </div>
           <div className="right-image">
             <img src="/images/promotions/Hospital building-bro.svg" alt="Hospital Building" />

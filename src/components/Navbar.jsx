@@ -197,18 +197,12 @@ const Navbar = () => {
         <div className="navbar-left">
           <Link to="/" className="brand-container">
             <div className="logo-container">
-              <div className="logo-icon">
-                <FaClinicMedical />
-              </div>
-              <div className="logo-text">
-                <span className="logo-medi">Medi</span>
-                <span className="logo-shop">Shop</span>
-              </div>
+              <img src="/images/logo.jpg" alt="MediShop Logo" className="logo-image" />
             </div>
             {isHomePage && (
               <div className="location-selector" onClick={toggleLocationPopup}>
                 <FaMapMarkerAlt />
-                <span>Select Location</span>
+                <span>Location</span>
               </div>
             )}
           </Link>
