@@ -8,112 +8,88 @@ const PrescribeMedicineCategory = () => {
   const dummyProducts = [
     {
       id: 'pres1',
-      name: 'Amoxicillin 500mg',
+      name: 'Ecosprin 75mg',
       description: 'Antibiotic capsules (Prescription Required)',
-      price: 299.99,
-      image: '/images/products/product-1.jpg',
-      stock: 100,
-      manufacturer: 'PharmaCure'
+      price: 8.00,
+      image: '/images/products/p1.webp'
     },
     {
       id: 'pres2',
-      name: 'Lisinopril 10mg',
+      name: 'Bizoran 5mg+20mg',
       description: 'Blood pressure medication tablets (Prescription Required)',
-      price: 249.99,
-      image: '/images/products/product-2.jpg',
-      stock: 150,
-      manufacturer: 'MediHealth'
+      price: 180.09,
+      image: '/images/products/p2.webp'
     },
     // Adding 10 more medicines
     {
       id: 'pres3',
-      name: 'Atorvastatin 20mg',
+      name: 'Thyrox 50mcg',
       description: 'Cholesterol-lowering medication (Prescription Required)',
-      price: 320.50,
-      image: '/images/products/product-3.jpg',
-      stock: 120,
-      manufacturer: 'Pfizer'
+      price: 66.00,
+      image: '/images/products/p3.webp'
     },
     {
       id: 'pres4',
-      name: 'Levothyroxine 50mcg',
+      name: 'Uromax 0.4mg',
       description: 'Thyroid hormone replacement (Prescription Required)',
-      price: 275.75,
-      image: '/images/products/product-4.jpg',
-      stock: 90,
-      manufacturer: 'Abbott'
+      price: 60.00,
+      image: '/images/products/p4.webp'
     },
     {
       id: 'pres5',
-      name: 'Sertraline 100mg',
+      name: 'Comet 500mg',
       description: 'Antidepressant medication (Prescription Required)',
-      price: 350.00,
-      image: '/images/products/product-1.jpg',
-      stock: 80,
-      manufacturer: 'Pfizer'
+      price: 50.00,
+      image: '/images/products/p5.webp'
     },
     {
       id: 'pres6',
-      name: 'Losartan 50mg',
+      name: 'Uromax-D 0.4mg+0.5mg',
       description: 'Angiotensin II receptor blocker for hypertension (Prescription Required)',
-      price: 290.25,
-      image: '/images/products/product-2.jpg',
-      stock: 110,
-      manufacturer: 'Merck'
+      price: 115.00,
+      image: '/images/products/p6.webp'
     },
     {
       id: 'pres7',
-      name: 'Metoprolol 25mg',
+      name: 'Febustat 40mg',
       description: 'Beta-blocker for high blood pressure and angina (Prescription Required)',
-      price: 265.50,
-      image: '/images/products/product-3.jpg',
-      stock: 95,
-      manufacturer: 'AstraZeneca'
+      price: 130.00,
+      image: '/images/products/p7.webp'
     },
     {
       id: 'pres8',
-      name: 'Escitalopram 10mg',
+      name: 'Metacard MR 35mg',
       description: 'Selective serotonin reuptake inhibitor for depression (Prescription Required)',
-      price: 330.75,
-      image: '/images/products/product-4.jpg',
-      stock: 75,
-      manufacturer: 'Lundbeck'
+      price: 140.00,
+      image: '/images/products/p8.webp'
     },
     {
       id: 'pres9',
-      name: 'Warfarin 5mg',
+      name: 'Lijenta 5mg',
       description: 'Anticoagulant to prevent blood clots (Prescription Required)',
-      price: 310.00,
-      image: '/images/products/product-1.jpg',
-      stock: 60,
-      manufacturer: 'Bristol-Myers Squibb'
+      price: 330.00,
+      image: '/images/products/p9.webp'
     },
     {
       id: 'pres10',
-      name: 'Fluoxetine 20mg',
+      name: 'Galvus Met 50 mg+500 mg',
       description: 'Antidepressant for depression and OCD (Prescription Required)',
-      price: 285.25,
-      image: '/images/products/product-2.jpg',
-      stock: 85,
-      manufacturer: 'Eli Lilly'
+      price: 330.00,
+      image: '/images/products/p10.webp'
     },
     {
       id: 'pres11',
-      name: 'Omeprazole 40mg',
+      name: 'Cildip 5mg',
       description: 'Proton pump inhibitor for acid reflux (Prescription Required)',
-      price: 240.50,
-      image: '/images/products/product-3.jpg',
-      stock: 130,
-      manufacturer: 'AstraZeneca'
+      price: 112.00,
+      image: '/images/products/p11.webp'
     },
     {
       id: 'pres12',
-      name: 'Prednisone 10mg',
+      name: 'Thyrin50 mcg',
       description: 'Corticosteroid for inflammation and allergic disorders (Prescription Required)',
-      price: 195.75,
-      image: '/images/products/product-4.jpg',
-      stock: 100,
-      manufacturer: 'Pfizer'
+      price: 33.75,
+      image: '/images/products/p12.webp'
     }
   ];
 

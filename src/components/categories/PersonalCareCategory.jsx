@@ -8,21 +8,52 @@ const PersonalCareCategory = () => {
   const dummyProducts = [
     {
       id: 'care1',
-      name: 'Facial Cleanser',
+      name: 'Select-Plus',
       description: 'Gentle pH-balanced facial cleanser for all skin types',
-      price: 399.99,
-      image: '/images/products/product-1.jpg',
-      stock: 80,
-      manufacturer: 'DermaCare'
+      price: 200.00,
+      image: '/images/products/pc1.webp'
     },
     {
       id: 'care2',
-      name: 'Moisturizing Lotion',
+      name: 'Isabgul Plus',
       description: '24-hour hydration body lotion with natural oils',
-      price: 349.99,
-      image: '/images/products/product-2.jpg',
-      stock: 100,
-      manufacturer: 'SkinEssentials'
+      price: 495.00,
+      image: '/images/products/pc2.webp'
+    },
+    {
+      id: 'care3',
+      name: 'Sunmask',
+      description: 'Advanced formula with retinol and vitamin C for youthful skin',
+      price: 250.00,
+      image: '/images/products/pc3.webp'
+    },
+    {
+      id: 'care4',
+      name: 'Absorbent Cotton Wool',
+      description: 'Broad-spectrum protection with lightweight, non-greasy formula',
+      price: 25.00,
+      image: '/images/products/pc4.webp'
+    },
+    {
+      id: 'care5',
+      name: 'Moov Cream Indian',
+      description: 'Intensive moisturizing hand cream with shea butter',
+      price: 280.00,
+      image: '/images/products/pc5.webp'
+    },
+    {
+      id: 'care6',
+      name: 'Acne-Aid',
+      description: 'Nourishing body wash with natural extracts and vitamins',
+      price: 310.00,
+      image: '/images/products/pc6.webp'
+    },
+    {
+      id: 'care7',
+      name: 'Moov Spray Indian',
+      description: 'Hydrating lip balm with SPF 15 protection',
+      price: 522.00,
+      image: '/images/products/pc7.webp'
     }
   ];
 

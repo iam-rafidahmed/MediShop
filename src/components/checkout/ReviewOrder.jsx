@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
+import { useAuth } from '../../context/AuthContext';
 import OrderConfirmation from './OrderConfirmation';
 
 const ReviewOrder = ({ userInfo, onPrevious }) => {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [orderNumber, setOrderNumber] = useState('');
-  const { clearCart } = useCart();
+  const { clearCart, cartItems, cartTotal } = useCart();
+  const { currentUser } = useAuth();
   const navigate = useNavigate();
 
   // Function to generate a formatted order number
@@ -18,10 +20,25 @@ const ReviewOrder = ({ userInfo, onPrevious }) => {
   };
 
   const handlePlaceOrder = () => {
-    // In a real app, you would submit the order to your backend here
-    // and receive an order confirmation number in response
+    // Generate order number
     const newOrderNumber = generateOrderNumber();
     setOrderNumber(newOrderNumber);
+    
+    // Save order to localStorage for profile history
+    const orderData = {
+      id: newOrderNumber,
+      userId: currentUser?.id,
+      date: new Date().toISOString(),
+      status: 'completed',
+      items: cartItems,
+      total: cartTotal,
+      userInfo: userInfo
+    };
+    
+    // Get existing orders and add new one
+    const existingOrders = JSON.parse(localStorage.getItem('medishopOrders') || '[]');
+    existingOrders.push(orderData);
+    localStorage.setItem('medishopOrders', JSON.stringify(existingOrders));
     
     // Clear the cart after successful order placement
     clearCart();

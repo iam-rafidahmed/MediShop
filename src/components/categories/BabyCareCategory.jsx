@@ -8,112 +8,67 @@ const BabyCareCategory = () => {
   const dummyProducts = [
     {
       id: 'baby1',
-      name: 'Baby Lotion',
+      name: 'Baby Wipes',
       description: 'Gentle moisturizing lotion for sensitive baby skin',
-      price: 299.99,
-      image: '/images/products/product-1.jpg',
-      stock: 75,
-      manufacturer: 'BabySoft'
+      price: 235.00,
+      image: '/images/products/b1.webp'
     },
     {
       id: 'baby2',
-      name: 'Diaper Pack',
+      name: 'Savlon Baby Wipes',
       description: 'Ultra-absorbent diapers with wetness indicator',
-      price: 599.99,
-      image: '/images/products/product-2.jpg',
-      stock: 100,
-      manufacturer: 'BabyComfort'
+      price: 235.00,
+      image: '/images/products/b2.webp'
     },
     // Adding 10 more products
     {
       id: 'baby3',
-      name: 'Baby Wipes',
+      name: 'Savlon Baby Wipes (AntiBacterial)',
       description: 'Alcohol-free gentle wipes for sensitive skin, pack of 80',
-      price: 199.99,
-      image: '/images/products/product-3.jpg',
-      stock: 150,
-      manufacturer: 'PureTouch'
+      price: 285.00,
+      image: '/images/products/b3.webp'
     },
     {
       id: 'baby4',
-      name: 'Baby Shampoo',
+      name: 'NeoCare Diaper Belt',
       description: 'Tear-free gentle shampoo for babies and toddlers',
-      price: 249.99,
-      image: '/images/products/product-4.jpg',
-      stock: 90,
-      manufacturer: 'BabyClean'
+      price: 1200.00,
+      image: '/images/products/b4.webp'
     },
     {
       id: 'baby5',
-      name: 'Baby Powder',
+      name: 'Lactogen 350 gm',
       description: 'Talc-free powder to prevent diaper rash and irritation',
-      price: 179.99,
-      image: '/images/products/product-5.jpg',
-      stock: 110,
-      manufacturer: 'BabySoft'
+      price: 67.00,
+      image: '/images/products/b5.webp'
     },
     {
       id: 'baby6',
-      name: 'Teething Gel',
+      name: 'Neocare Pants',
       description: 'Soothing gel for teething discomfort and pain relief',
-      price: 229.99,
-      image: '/images/products/product-6.jpg',
-      stock: 65,
-      manufacturer: 'ToothEase'
+      price: 120.00,
+      image: '/images/products/b6.webp'
     },
     {
       id: 'baby7',
-      name: 'Baby Thermometer',
+      name: 'Meril Baby Gel Toothpaste',
       description: 'Digital thermometer designed for infants with fever alert',
-      price: 499.99,
-      image: '/images/products/product-7.jpg',
-      stock: 50,
-      manufacturer: 'BabyTemp'
+      price: 10.00,
+      image: '/images/products/b7.png'
     },
     {
       id: 'baby8',
-      name: 'Nasal Aspirator',
+      name: 'NAN OPTI Pro',
       description: 'Gentle nasal aspirator for clearing baby\'s congestion',
-      price: 349.99,
-      image: '/images/products/product-8.jpg',
-      stock: 60,
-      manufacturer: 'BreathEasy'
+      price: 900.00,
+      image: '/images/products/b8.jpg'
     },
     {
       id: 'baby9',
-      name: 'Baby Formula',
+      name: 'Baby Cotton Buds',
       description: 'Nutritionally complete infant formula, 400g tin',
-      price: 899.99,
-      image: '/images/products/product-1.jpg',
-      stock: 80,
-      manufacturer: 'NutriGrow'
-    },
-    {
-      id: 'baby10',
-      name: 'Baby Bottle Set',
-      description: 'Set of 3 anti-colic bottles with different flow nipples',
-      price: 799.99,
-      image: '/images/products/product-2.jpg',
-      stock: 45,
-      manufacturer: 'FeedWell'
-    },
-    {
-      id: 'baby11',
-      name: 'Baby Nail Clipper',
-      description: 'Safety baby nail clipper with magnifying glass',
-      price: 199.99,
-      image: '/images/products/product-3.jpg',
-      stock: 70,
-      manufacturer: 'SafeCare'
-    },
-    {
-      id: 'baby12',
-      name: 'Baby Monitor',
-      description: 'Digital video baby monitor with night vision and two-way audio',
-      price: 2999.99,
-      image: '/images/products/product-4.jpg',
-      stock: 25,
-      manufacturer: 'BabyGuard'
+      price: 100.00,
+      image: '/images/products/b9.jpg'
     }
   ];
 

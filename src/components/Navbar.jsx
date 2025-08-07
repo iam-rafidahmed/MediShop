@@ -3,37 +3,10 @@ import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaMapMarkerAlt, FaSearch, FaShoppingCart, FaUser, FaBars, FaTimes, FaClinicMedical, FaPills, FaStethoscope, FaFirstAid, FaHospital, FaAmbulance, FaPrescriptionBottleAlt, FaTooth, FaBaby, FaSprayCan, FaHeartbeat, FaPrescription, FaTimes as FaClose } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
 import { useSearch } from '../context/SearchContext';
+import { useAuth } from '../context/AuthContext';
+import { getAllProducts } from '../data/products';
 import LocationPopup from './LocationPopup';
 import './Navbar.css';
-
-// Create a local getAllProducts function since categories.js was removed
-const getAllProducts = () => {
-  try {
-    // Combine products from all category components
-    const products = [
-      // Health & Hygiene products
-      {id: 'hyg1', name: 'Dettol Hand Sanitizer', category: 'Health & Hygiene', description: 'Instant Hand Sanitizer with Moisturizer (200ml)', manufacturer: 'Reckitt Benckiser'},
-      {id: 'hyg2', name: 'Savlon Antiseptic', category: 'Health & Hygiene', description: 'Antiseptic Liquid for cuts and wounds (500ml)', manufacturer: 'ICI'},
-      {id: 'hyg3', name: 'Betadine Solution', category: 'Health & Hygiene', description: 'Povidone-Iodine Antiseptic Solution (100ml)', manufacturer: 'Mundipharma'},
-      {id: 'hyg4', name: 'Paracetamol 500mg', category: 'Health & Hygiene', description: 'Fever and Pain Relief Tablets (10 tablets/strip)', manufacturer: 'Incepta Pharmaceuticals'},
-      {id: 'hyg5', name: 'Vitamin C 500mg', category: 'Health & Hygiene', description: 'Immune Support Supplement (30 tablets/bottle)', manufacturer: 'Healthcare Nutrition'},
-      
-      // OTC Medicine products
-      {id: 'otc1', name: 'Paracetamol Plus', category: 'OTC-Medicine', description: 'Fast-acting pain relief tablet with added caffeine (No Prescription Required)', manufacturer: 'HealthCare Pharma'},
-      {id: 'otc2', name: 'ColdGuard Syrup', category: 'OTC-Medicine', description: 'All-in-one cold and flu relief syrup (No Prescription Required)', manufacturer: 'WellLife Labs'},
-      {id: 'otc3', name: 'Napa Extra', category: 'OTC-Medicine', description: 'Advanced fever and pain relief tablets (No Prescription Required)', manufacturer: 'Beximco Pharmaceuticals'},
-      
-      // Prescribed Medicine products
-      {id: 'pres1', name: 'Amoxicillin 500mg', category: 'Prescribe-Medicine', description: 'Antibiotic capsules (Prescription Required)', manufacturer: 'PharmaCure'},
-      {id: 'pres2', name: 'Lisinopril 10mg', category: 'Prescribe-Medicine', description: 'Blood pressure medication tablets (Prescription Required)', manufacturer: 'MediHealth'}
-    ];
-    
-    return products;
-  } catch (error) {
-    console.error("Error getting all products:", error);
-    return [];
-  }
-};
 
 const Navbar = () => {
   const [showLocationPopup, setShowLocationPopup] = useState(false);
@@ -48,6 +21,7 @@ const Navbar = () => {
   });
   const { itemCount } = useCart();
   const { searchProducts } = useSearch();
+  const { isLoggedIn, currentUser, logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
   const isHomePage = location.pathname === '/';
@@ -94,8 +68,8 @@ const Navbar = () => {
         const productSuggestions = startsWithMatches.map(product => ({
           id: product.id,
           text: product.name,
-          type: 'product',
-          category: product.category || ''
+          price: product.price,
+          type: 'product'
         }));
         
         // Limit to 8 suggestions
@@ -111,13 +85,13 @@ const Navbar = () => {
       // Sort alphabetically for better organization
       containsMatches.sort((a, b) => a.name.localeCompare(b.name));
       
-      // Generate suggestions from matching products
-      const productSuggestions = containsMatches.map(product => ({
-        id: product.id,
-        text: product.name,
-        type: 'product',
-        category: product.category || ''
-      }));
+              // Generate suggestions from matching products
+        const productSuggestions = containsMatches.map(product => ({
+          id: product.id,
+          text: product.name,
+          price: product.price,
+          type: 'product'
+        }));
       
       // Limit to 8 suggestions
       setSuggestions(productSuggestions.slice(0, 8));
@@ -276,9 +250,9 @@ const Navbar = () => {
                       <FaSearch className="suggestion-icon" />
                       <div className="suggestion-text">
                         <span>{suggestion.text}</span>
-                        {suggestion.category && (
-                          <small>in {suggestion.category}</small>
-                        )}
+                      </div>
+                      <div className="suggestion-price">
+                        <span>Tk {suggestion.price?.toFixed(2)}</span>
                       </div>
                     </li>
                   ))}
@@ -295,28 +269,40 @@ const Navbar = () => {
             <div className="first-aid-icon" onClick={toggleFirstAidDropdown} ref={firstAidRef}>
               <FaFirstAid />
               <div className={`first-aid-dropdown ${showFirstAidDropdown ? 'show' : ''}`}>
-                <div className="first-aid-dropdown-item">
+                <Link to="/first-aid-service" className="first-aid-dropdown-item" onClick={() => setShowFirstAidDropdown(false)}>
                   <FaHospital className="dropdown-icon" />
                   <span>First Aid</span>
-                </div>
+                </Link>
                 <div className="first-aid-dropdown-item">
                   <FaPrescriptionBottleAlt className="dropdown-icon" />
                   <span>Request Medicine</span>
                 </div>
-                <div className="first-aid-dropdown-item">
+                <Link to="/emergency-service" className="first-aid-dropdown-item" onClick={() => setShowFirstAidDropdown(false)}>
                   <FaAmbulance className="dropdown-icon" />
                   <span>Emergency Services</span>
-                </div>
+                </Link>
               </div>
             </div>
             <Link to="/cart" className="cart-icon">
               <FaShoppingCart />
               {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
             </Link>
-            <Link to="/login" className="user-icon">
-              <FaUser />
-              <span>Login/Register</span>
-            </Link>
+            {isLoggedIn ? (
+              <div className="user-profile">
+                <Link to="/profile" className="user-info">
+                  <FaUser />
+                  <span>{currentUser?.name || 'User'}</span>
+                </Link>
+                <button onClick={logout} className="logout-button">
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <Link to="/login" className="user-icon">
+                <FaUser />
+                <span>Login/Register</span>
+              </Link>
+            )}
           </div>
           <button className="mobile-menu-button" onClick={toggleMobileMenu}>
             {showMobileMenu ? <FaTimes /> : <FaBars />}
@@ -371,22 +357,34 @@ const Navbar = () => {
           
           <div className="mobile-menu-section">
             <div className="mobile-menu-section-title">Emergency Services</div>
-            <div className="mobile-menu-item">
+            <Link to="/first-aid-service" className="mobile-menu-item" onClick={toggleMobileMenu}>
               <FaHospital className="mobile-menu-icon" />
               <span>First Aid</span>
-            </div>
+            </Link>
             <div className="mobile-menu-item">
               <FaPrescriptionBottleAlt className="mobile-menu-icon" />
               <span>Request Medicine</span>
             </div>
-            <div className="mobile-menu-item">
+            <Link to="/emergency-service" className="mobile-menu-item" onClick={toggleMobileMenu}>
               <FaAmbulance className="mobile-menu-icon" />
               <span>Emergency Services</span>
-            </div>
+            </Link>
           </div>
           
           <NavLink to="/cart" className={({isActive}) => isActive ? 'active' : ''} onClick={toggleMobileMenu}>Cart</NavLink>
-          <NavLink to="/login" className={({isActive}) => isActive ? 'active' : ''} onClick={toggleMobileMenu}>Login/Register</NavLink>
+          {isLoggedIn ? (
+            <>
+              <Link to="/profile" className="mobile-user-info" onClick={toggleMobileMenu}>
+                <FaUser />
+                <span>{currentUser?.name || 'User'}</span>
+              </Link>
+              <button onClick={() => { logout(); toggleMobileMenu(); }} className="mobile-logout-button">
+                Logout
+              </button>
+            </>
+          ) : (
+            <NavLink to="/login" className={({isActive}) => isActive ? 'active' : ''} onClick={toggleMobileMenu}>Login/Register</NavLink>
+          )}
         </div>
       )}
 

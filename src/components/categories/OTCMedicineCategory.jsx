@@ -8,130 +8,102 @@ const OTCMedicineCategory = () => {
   const dummyProducts = [
     {
       id: 'otc1',
-      name: 'Paracetamol Plus',
+      name: 'Sergel 20mg',
       description: 'Fast-acting pain relief tablet with added caffeine (No Prescription Required)',
-      price: 149.99,
-      image: '/images/products/product-1.jpg',
-      stock: 100,
-      manufacturer: 'HealthCare Pharma'
+      price: 70.00,
+      image: '/images/products/sergel.otc1.webp'
     },
     {
       id: 'otc2',
-      name: 'ColdGuard Syrup',
+      name: 'Maxpro 20mg',
       description: 'All-in-one cold and flu relief syrup (No Prescription Required)',
-      price: 199.99,
-      image: '/images/products/product-2.jpg',
-      stock: 75,
-      manufacturer: 'WellLife Labs'
+      price: 98.00,
+      image: '/images/products/maxpro.otc2.webp'
     },
     {
       id: 'otc3',
-      name: 'Napa Extra',
+      name: 'Monas 10mg',
       description: 'Advanced fever and pain relief tablets (No Prescription Required)',
-      price: 120.00,
-      image: '/images/products/product-3.jpg',
-      stock: 150,
-      manufacturer: 'Beximco Pharmaceuticals'
+      price: 262.50,
+      image: '/images/products/monas.otc3.webp'
     },
     {
       id: 'otc4',
-      name: 'Ace Plus',
+      name: 'Napa Extend 665mg',
       description: 'Fast-acting headache and muscle pain relief (No Prescription Required)',
-      price: 85.50,
-      image: '/images/products/product-4.jpg',
-      stock: 200,
-      manufacturer: 'Square Pharmaceuticals'
+      price: 24.00,
+      image: '/images/products/napaext.otc4.webp'
     },
     // Adding 10 more medicines
     {
       id: 'otc5',
-      name: 'Digene Gel',
+      name: 'Omidon 10mg',
       description: 'Antacid gel for quick relief from acidity and indigestion',
-      price: 110.50,
-      image: '/images/products/product-1.jpg',
-      stock: 120,
-      manufacturer: 'Abbott Healthcare'
+      price: 52.50,
+      image: '/images/products/omidon.otc5.webp'
     },
     {
       id: 'otc6',
-      name: 'Strepsils Honey & Lemon',
+      name: 'Napa Extra 500mg',
       description: 'Medicated lozenges for sore throat relief',
-      price: 75.25,
-      image: '/images/products/product-2.jpg',
-      stock: 180,
-      manufacturer: 'Reckitt Benckiser'
+      price: 30.00,
+      image: '/images/products/napaextra.otc6.webp'
     },
     {
       id: 'otc7',
-      name: 'Vicks VapoRub',
+      name: 'Seclo 20mg',
       description: 'Topical cough suppressant for temporary relief of cough and congestion',
-      price: 130.00,
-      image: '/images/products/product-3.jpg',
-      stock: 90,
-      manufacturer: 'Procter & Gamble'
+      price: 60.00,
+      image: '/images/products/seclo.otc7.webp'
     },
     {
       id: 'otc8',
-      name: 'Imodium',
+      name: 'Alatrol 10mg',
       description: 'Anti-diarrheal medication for fast relief',
-      price: 165.75,
-      image: '/images/products/product-4.jpg',
-      stock: 110,
-      manufacturer: 'Johnson & Johnson'
+      price: 30.10,
+      image: '/images/products/otc8.webp'
     },
     {
       id: 'otc9',
-      name: 'Benadryl Allergy',
+      name: 'losectil 20mg',
       description: 'Antihistamine for allergy relief',
-      price: 145.50,
-      image: '/images/products/product-1.jpg',
-      stock: 85,
-      manufacturer: 'McNeil Consumer'
+      price: 50.00,
+      image: '/images/products/otc9.webp'
     },
     {
       id: 'otc10',
-      name: 'Pepto-Bismol',
+      name: 'Tufnil 200mg',
       description: 'Relief for upset stomach, indigestion, and nausea',
-      price: 195.25,
-      image: '/images/products/product-2.jpg',
-      stock: 70,
-      manufacturer: 'Procter & Gamble'
+      price: 100.00,
+      image: '/images/products/otc10.webp'
     },
     {
       id: 'otc11',
-      name: 'Gaviscon Double Action',
+      name: 'E-Cap 400IU',
       description: 'Fast-acting, dual relief from heartburn and indigestion',
-      price: 180.00,
-      image: '/images/products/product-3.jpg',
-      stock: 95,
-      manufacturer: 'Reckitt Benckiser'
+      price: 105.00,
+      image: '/images/products/otc11.webp'
     },
     {
       id: 'otc12',
-      name: 'Tums Extra Strength',
+      name: 'Napa 60ml',
       description: 'Antacid tablets for fast heartburn relief',
-      price: 95.50,
-      image: '/images/products/product-4.jpg',
-      stock: 150,
-      manufacturer: 'GlaxoSmithKline'
+      price: 35.00,
+      image: '/images/products/otc12.webp'
     },
     {
       id: 'otc13',
-      name: 'Advil Liquid-Gels',
+      name: 'Deslor 5 mg',
       description: 'Fast pain relief for headaches, muscle aches, and minor arthritis',
-      price: 210.25,
-      image: '/images/products/product-1.jpg',
-      stock: 120,
-      manufacturer: 'Pfizer'
+      price: 50.00,
+      image: '/images/products/otc13.webp'
     },
     {
       id: 'otc14',
-      name: 'Halls Mentho-Lyptus',
+      name: 'Xorel 20 mg',
       description: 'Cough suppressant drops for temporary relief',
-      price: 55.00,
-      image: '/images/products/product-2.jpg',
-      stock: 200,
-      manufacturer: 'Mondelez International'
+      price: 40.00,
+      image: '/images/products/otc14.webp'
     }
   ];
 

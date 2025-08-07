@@ -44,24 +44,26 @@
   font-size: 1.2rem;
   color: #333;
   margin: 0 0 0.5rem 0;
-  font-weight: 600;
+  font-weight: bold;
   height: 2.4rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  text-align: center;
 }
 
-.product-details p {
+.product-details p:not(.price) {
   color: #666;
   font-size: 0.9rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 2.7rem;
+  text-align: center;
 }
 
 .price {
@@ -85,7 +87,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: center;
-  margin-top: auto;
+  margin-top: 0.5rem;
 }
 
 .add-to-cart:hover {

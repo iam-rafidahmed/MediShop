@@ -11,18 +11,49 @@ const FirstAidCategory = () => {
       name: 'First Aid Kit',
       description: 'Complete emergency kit with essential medical supplies',
       price: 799.99,
-      image: '/images/products/product-1.jpg',
-      stock: 50,
-      manufacturer: 'SafetyFirst'
+      image: '/images/products/product-1.jpg'
     },
     {
       id: 'aid2',
       name: 'Antiseptic Solution',
       description: 'Medical-grade antiseptic for wound cleaning',
       price: 249.99,
-      image: '/images/products/product-2.jpg',
-      stock: 100,
-      manufacturer: 'MediClean'
+      image: '/images/products/product-2.jpg'
+    },
+    {
+      id: 'aid3',
+      name: 'Bandage Roll',
+      description: 'Sterile gauze bandage roll for wound dressing',
+      price: 149.99,
+      image: '/images/products/product-3.jpg'
+    },
+    {
+      id: 'aid4',
+      name: 'Ice Pack',
+      description: 'Reusable gel ice pack for injury treatment',
+      price: 199.99,
+      image: '/images/products/product-4.jpg'
+    },
+    {
+      id: 'aid5',
+      name: 'Medical Tape',
+      description: 'Hypoallergenic medical tape for secure bandaging',
+      price: 89.99,
+      image: '/images/products/product-1.jpg'
+    },
+    {
+      id: 'aid6',
+      name: 'Scissors',
+      description: 'Medical-grade scissors for first aid procedures',
+      price: 179.99,
+      image: '/images/products/product-2.jpg'
+    },
+    {
+      id: 'aid7',
+      name: 'Thermometer',
+      description: 'Digital thermometer for accurate temperature reading',
+      price: 399.99,
+      image: '/images/products/product-3.jpg'
     }
   ];
 

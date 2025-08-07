@@ -39,8 +39,7 @@ const SearchResults = () => {
               <p className="product-description">{product.description}</p>
               <p className="product-price">৳{product.price.toFixed(2)}</p>
               <div className="product-meta">
-                <span>Stock: {product.stock}</span>
-                <span>Manufacturer: {product.manufacturer}</span>
+                <span>Category: {product.category}</span>
               </div>
               <button 
                 className="add-to-cart-btn" 

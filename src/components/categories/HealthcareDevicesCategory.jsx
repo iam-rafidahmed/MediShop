@@ -8,112 +8,60 @@ const HealthcareDevicesCategory = () => {
   const dummyProducts = [
     {
       id: 'device1',
-      name: 'Digital BP Monitor',
+      name: 'Thermometer',
       description: 'Accurate blood pressure monitor with large display',
-      price: 1999.99,
-      image: '/images/products/product-1.jpg',
-      stock: 35,
-      manufacturer: 'HealthTech'
+      price: 265.00,
+      image: '/images/products/h1.webp'
     },
     {
       id: 'device2',
-      name: 'Nebulizer Machine',
+      name: 'Digital Weight Machine',
       description: 'Portable nebulizer for respiratory medication delivery',
-      price: 2499.99,
-      image: '/images/products/product-2.jpg',
-      stock: 20,
-      manufacturer: 'MediBreath'
+      price: 1400.00,
+      image: '/images/products/h2.webp'
     },
-    // Adding 10 more products
+    
     {
       id: 'device3',
-      name: 'Digital Thermometer',
+      name: 'Blood Pressure Machine Digital',
       description: 'Fast-reading digital thermometer with fever alert',
-      price: 599.99,
-      image: '/images/products/product-3.jpg',
-      stock: 50,
-      manufacturer: 'TempTech'
+      price: 2500.00,
+      image: '/images/products/h3.webp'
     },
     {
       id: 'device4',
-      name: 'Pulse Oximeter',
+      name: 'Blood Pressure Machine',
       description: 'Fingertip pulse oximeter for measuring blood oxygen levels',
-      price: 1299.99,
-      image: '/images/products/product-4.jpg',
-      stock: 40,
-      manufacturer: 'OxyCheck'
+      price: 3450.00,
+      image: '/images/products/h4.webp'
     },
     {
       id: 'device5',
-      name: 'TENS Unit',
+      name: 'Blood Pressure Machine Digital',
       description: 'Transcutaneous electrical nerve stimulation device for pain relief',
-      price: 2799.99,
-      image: '/images/products/product-5.jpg',
-      stock: 15,
-      manufacturer: 'PainRelief'
+      price: 2500.00,
+      image: '/images/products/h5.webp'
     },
     {
       id: 'device6',
-      name: 'Digital Weight Scale',
+      name: 'Pulse Oximeter',
       description: 'High-precision digital scale with body composition analysis',
-      price: 1899.99,
-      image: '/images/products/product-6.jpg',
-      stock: 25,
-      manufacturer: 'HealthMetrics'
+      price: 1275.00,
+      image: '/images/products/h6.webp'
     },
     {
       id: 'device7',
-      name: 'Hearing Aid',
+      name: 'Nebulizer',
       description: 'Rechargeable digital hearing aid with noise reduction',
-      price: 15999.99,
-      image: '/images/products/product-7.jpg',
-      stock: 10,
-      manufacturer: 'ClearSound'
+      price: 3000.00,
+      image: '/images/products/h7.webp'
     },
     {
       id: 'device8',
-      name: 'Glucose Monitor Kit',
+      name: 'Pulse Oximeter',
       description: 'Complete blood glucose monitoring system with test strips',
-      price: 3499.99,
-      image: '/images/products/product-8.jpg',
-      stock: 30,
-      manufacturer: 'DiabetesControl'
-    },
-    {
-      id: 'device9',
-      name: 'Infrared Thermometer',
-      description: 'Non-contact infrared thermometer for instant readings',
-      price: 1299.99,
-      image: '/images/products/product-1.jpg',
-      stock: 45,
-      manufacturer: 'SafeScan'
-    },
-    {
-      id: 'device10',
-      name: 'ECG Monitor',
-      description: 'Portable electrocardiogram monitor for home use',
-      price: 8999.99,
-      image: '/images/products/product-2.jpg',
-      stock: 8,
-      manufacturer: 'HeartTrack'
-    },
-    {
-      id: 'device11',
-      name: 'CPAP Machine',
-      description: 'Continuous positive airway pressure device for sleep apnea',
-      price: 12999.99,
-      image: '/images/products/product-3.jpg',
-      stock: 12,
-      manufacturer: 'SleepWell'
-    },
-    {
-      id: 'device12',
-      name: 'Mobility Scooter',
-      description: 'Electric mobility scooter for improved independence',
-      price: 45999.99,
-      image: '/images/products/product-4.jpg',
-      stock: 5,
-      manufacturer: 'MobilityPlus'
+      price: 1600.00,
+      image: '/images/products/h8.webp'
     }
   ];
 
