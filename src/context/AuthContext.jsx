@@ -39,6 +39,18 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
+    // Clear user-specific cart before removing user data
+    const currentUser = localStorage.getItem('medishopCurrentUser');
+    if (currentUser) {
+      try {
+        const user = JSON.parse(currentUser);
+        const userCartKey = `medishopCart_${user.id}`;
+        localStorage.removeItem(userCartKey);
+      } catch (error) {
+        console.error('Error clearing user cart on logout:', error);
+      }
+    }
+    
     localStorage.removeItem('isMedishopLoggedIn');
     localStorage.removeItem('medishopCurrentUser');
     setIsLoggedIn(false);

@@ -9,49 +9,49 @@ const ElderlyCareCategory = () => {
     {
       id: 'elder1',
       name: 'Walking Cane',
-      description: 'Adjustable height walking cane with comfortable grip',
+        description: 'adjustable walking support',
       price: 899.99,
       image: '/images/products/product-1.jpg'
     },
     {
       id: 'elder2',
       name: 'Pill Organizer',
-      description: 'Weekly pill organizer with AM/PM compartments',
+        description: 'weekly medication organizer',
       price: 349.99,
       image: '/images/products/product-2.jpg'
     },
     {
       id: 'elder3',
       name: 'Blood Pressure Monitor',
-      description: 'Digital automatic blood pressure monitor for home use',
+        description: 'automatic BP monitor',
       price: 1299.99,
       image: '/images/products/product-3.jpg'
     },
     {
       id: 'elder4',
       name: 'Grab Bar',
-      description: 'Safety grab bar for bathroom and shower installation',
+        description: 'bathroom safety bar',
       price: 599.99,
       image: '/images/products/product-4.jpg'
     },
     {
       id: 'elder5',
       name: 'Reading Glasses',
-      description: 'Comfortable reading glasses with anti-glare coating',
+        description: 'anti-glare reading glasses',
       price: 249.99,
       image: '/images/products/product-1.jpg'
     },
     {
       id: 'elder6',
       name: 'Joint Support Brace',
-      description: 'Adjustable knee support brace for arthritis relief',
+        description: 'adjustable knee brace',
       price: 449.99,
       image: '/images/products/product-2.jpg'
     },
     {
       id: 'elder7',
       name: 'Emergency Alert System',
-      description: 'Personal emergency alert pendant for safety',
+        description: 'personal emergency pendant',
       price: 1999.99,
       image: '/images/products/product-3.jpg'
     }

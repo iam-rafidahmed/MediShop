@@ -9,14 +9,14 @@ const PrescribeMedicineCategory = () => {
     {
       id: 'pres1',
       name: 'Ecosprin 75mg',
-      description: 'Antibiotic capsules (Prescription Required)',
+        description: 'antiplatelet heart protection',
       price: 8.00,
       image: '/images/products/p1.webp'
     },
     {
       id: 'pres2',
       name: 'Bizoran 5mg+20mg',
-      description: 'Blood pressure medication tablets (Prescription Required)',
+        description: 'blood pressure control',
       price: 180.09,
       image: '/images/products/p2.webp'
     },
@@ -24,70 +24,70 @@ const PrescribeMedicineCategory = () => {
     {
       id: 'pres3',
       name: 'Thyrox 50mcg',
-      description: 'Cholesterol-lowering medication (Prescription Required)',
+        description: 'thyroid hormone replacement',
       price: 66.00,
       image: '/images/products/p3.webp'
     },
     {
       id: 'pres4',
       name: 'Uromax 0.4mg',
-      description: 'Thyroid hormone replacement (Prescription Required)',
+        description: 'urinary flow improvement',
       price: 60.00,
       image: '/images/products/p4.webp'
     },
     {
       id: 'pres5',
       name: 'Comet 500mg',
-      description: 'Antidepressant medication (Prescription Required)',
+        description: 'diabetes glucose control',
       price: 50.00,
       image: '/images/products/p5.webp'
     },
     {
       id: 'pres6',
       name: 'Uromax-D 0.4mg+0.5mg',
-      description: 'Angiotensin II receptor blocker for hypertension (Prescription Required)',
+        description: 'BPH symptom relief',
       price: 115.00,
       image: '/images/products/p6.webp'
     },
     {
       id: 'pres7',
       name: 'Febustat 40mg',
-      description: 'Beta-blocker for high blood pressure and angina (Prescription Required)',
+        description: 'uric acid reduction',
       price: 130.00,
       image: '/images/products/p7.webp'
     },
     {
       id: 'pres8',
       name: 'Metacard MR 35mg',
-      description: 'Selective serotonin reuptake inhibitor for depression (Prescription Required)',
+        description: 'angina symptom control',
       price: 140.00,
       image: '/images/products/p8.webp'
     },
     {
       id: 'pres9',
       name: 'Lijenta 5mg',
-      description: 'Anticoagulant to prevent blood clots (Prescription Required)',
+        description: 'diabetes DPP-4 inhibitor',
       price: 330.00,
       image: '/images/products/p9.webp'
     },
     {
       id: 'pres10',
       name: 'Galvus Met 50 mg+500 mg',
-      description: 'Antidepressant for depression and OCD (Prescription Required)',
+        description: 'diabetes dual therapy',
       price: 330.00,
       image: '/images/products/p10.webp'
     },
     {
       id: 'pres11',
       name: 'Cildip 5mg',
-      description: 'Proton pump inhibitor for acid reflux (Prescription Required)',
+        description: 'blood pressure reduction',
       price: 112.00,
       image: '/images/products/p11.webp'
     },
     {
       id: 'pres12',
       name: 'Thyrin50 mcg',
-      description: 'Corticosteroid for inflammation and allergic disorders (Prescription Required)',
+        description: 'thyroid hormone replacement',
       price: 33.75,
       image: '/images/products/p12.webp'
     }

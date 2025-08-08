@@ -141,16 +141,16 @@ const LocationPopup = ({ onClose }) => {
   return (
     <div className="location-popup-overlay">
       <div className="location-popup-container location-popup-light">
-        <div className="bg-green-500 px-5 py-4 flex justify-between items-center shadow-sm">
-          <h2 className="text-white text-xl font-semibold flex items-center m-0">
-            <FaMapMarkerAlt className="mr-3 text-2xl" />
+        <div className="location-popup-header">
+          <h2 className="location-popup-title">
+            <FaMapMarkerAlt className="location-title-icon" />
             Select Your Location
           </h2>
           <button 
-            className="text-white p-2 rounded-full hover:bg-red-500 hover:text-white transition-colors duration-200 flex items-center justify-center w-8 h-8"
+            className="location-close-button"
             onClick={onClose}
           >
-            <FaTimes className="text-xl" />
+            <FaTimes />
           </button>
         </div>
         

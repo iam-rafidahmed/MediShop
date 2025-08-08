@@ -9,14 +9,14 @@ const BabyCareCategory = () => {
     {
       id: 'baby1',
       name: 'Baby Wipes',
-      description: 'Gentle moisturizing lotion for sensitive baby skin',
+        description: 'gentle baby wipes',
       price: 235.00,
       image: '/images/products/b1.webp'
     },
     {
       id: 'baby2',
       name: 'Savlon Baby Wipes',
-      description: 'Ultra-absorbent diapers with wetness indicator',
+        description: 'antibacterial baby wipes',
       price: 235.00,
       image: '/images/products/b2.webp'
     },
@@ -24,49 +24,49 @@ const BabyCareCategory = () => {
     {
       id: 'baby3',
       name: 'Savlon Baby Wipes (AntiBacterial)',
-      description: 'Alcohol-free gentle wipes for sensitive skin, pack of 80',
+        description: 'antibacterial gentle wipes',
       price: 285.00,
       image: '/images/products/b3.webp'
     },
     {
       id: 'baby4',
       name: 'NeoCare Diaper Belt',
-      description: 'Tear-free gentle shampoo for babies and toddlers',
+        description: 'secure diaper belt',
       price: 1200.00,
       image: '/images/products/b4.webp'
     },
     {
       id: 'baby5',
       name: 'Lactogen 350 gm',
-      description: 'Talc-free powder to prevent diaper rash and irritation',
+        description: 'infant formula nutrition',
       price: 67.00,
       image: '/images/products/b5.webp'
     },
     {
       id: 'baby6',
       name: 'Neocare Pants',
-      description: 'Soothing gel for teething discomfort and pain relief',
+        description: 'comfortable baby diapers',
       price: 120.00,
       image: '/images/products/b6.webp'
     },
     {
       id: 'baby7',
       name: 'Meril Baby Gel Toothpaste',
-      description: 'Digital thermometer designed for infants with fever alert',
+        description: 'baby gel toothpaste',
       price: 10.00,
       image: '/images/products/b7.png'
     },
     {
       id: 'baby8',
       name: 'NAN OPTI Pro',
-      description: 'Gentle nasal aspirator for clearing baby\'s congestion',
+        description: 'infant formula milk',
       price: 900.00,
       image: '/images/products/b8.jpg'
     },
     {
       id: 'baby9',
-      name: 'Baby Cotton Buds',
-      description: 'Nutritionally complete infant formula, 400g tin',
+        name: 'Baby Cotton Buds',
+        description: 'soft cotton buds',
       price: 100.00,
       image: '/images/products/b9.jpg'
     }

@@ -9,14 +9,14 @@ const HealthcareDevicesCategory = () => {
     {
       id: 'device1',
       name: 'Thermometer',
-      description: 'Accurate blood pressure monitor with large display',
+        description: 'fast fever reading',
       price: 265.00,
       image: '/images/products/h1.webp'
     },
     {
       id: 'device2',
       name: 'Digital Weight Machine',
-      description: 'Portable nebulizer for respiratory medication delivery',
+        description: 'digital body scale',
       price: 1400.00,
       image: '/images/products/h2.webp'
     },
@@ -24,42 +24,42 @@ const HealthcareDevicesCategory = () => {
     {
       id: 'device3',
       name: 'Blood Pressure Machine Digital',
-      description: 'Fast-reading digital thermometer with fever alert',
+        description: 'digital thermometer alert',
       price: 2500.00,
       image: '/images/products/h3.webp'
     },
     {
       id: 'device4',
       name: 'Blood Pressure Machine',
-      description: 'Fingertip pulse oximeter for measuring blood oxygen levels',
+        description: 'pulse oximeter device',
       price: 3450.00,
       image: '/images/products/h4.webp'
     },
     {
       id: 'device5',
       name: 'Blood Pressure Machine Digital',
-      description: 'Transcutaneous electrical nerve stimulation device for pain relief',
+        description: 'tens pain reliever',
       price: 2500.00,
       image: '/images/products/h5.webp'
     },
     {
       id: 'device6',
       name: 'Pulse Oximeter',
-      description: 'High-precision digital scale with body composition analysis',
+        description: 'body composition scale',
       price: 1275.00,
       image: '/images/products/h6.webp'
     },
     {
       id: 'device7',
       name: 'Nebulizer',
-      description: 'Rechargeable digital hearing aid with noise reduction',
+        description: 'digital hearing aid',
       price: 3000.00,
       image: '/images/products/h7.webp'
     },
     {
       id: 'device8',
       name: 'Pulse Oximeter',
-      description: 'Complete blood glucose monitoring system with test strips',
+        description: 'glucose monitoring system',
       price: 1600.00,
       image: '/images/products/h8.webp'
     }

@@ -9,35 +9,35 @@ const SupplementCategory = () => {
     {
       id: 'supp1',
       name: 'Karkuma Joint Guard',
-      description: 'High-strength vitamin C supplement for immune support',
+        description: 'joint health support',
       price: 2170.00,
       image: '/images/products/s1.webp'
     },
     {
       id: 'supp2',
       name: 'Karkuma Organic Healthy Gut',
-      description: 'Calcium supplement with vitamin D3 for bone health',
+        description: 'digestive health supplement',
       price: 800.00,
       image: '/images/products/s2.webp'
     },
     {
       id: 'supp3',
       name: 'Karkuma Organic Honey',
-      description: 'Iron supplement for energy and blood health',
+        description: 'organic natural honey',
       price: 75.00,
       image: '/images/products/s3.webp'
     },
     {
       id: 'supp4',
       name: 'Zinc Supplement',
-      description: 'Zinc supplement for immune system and wound healing',
+        description: 'immune support zinc',
       price: 180.00,
       image: '/images/products/s4.webp'
     },
     {
       id: 'supp5',
       name: 'Immune 24 Hour +',
-      description: 'Folic acid supplement for cell growth and development',
+        description: 'daily immune support',
       price: 180.00,
       image: '/images/products/s5.webp'
     }

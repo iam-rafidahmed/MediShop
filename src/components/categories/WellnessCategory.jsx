@@ -9,42 +9,42 @@ const WellnessCategory = () => {
     {
       id: 'well1',
       name: 'Savlon Face Mask',
-      description: 'Complete daily multivitamin with minerals',
+        description: 'protective face mask',
       price: 320.00,
       image: '/images/products/w1.webp'
     },
     {
       id: 'well2',
       name: 'AXE Brand Universal Oil',
-      description: 'High-potency omega-3 fatty acids supplement',
+        description: 'soothing medicated oil',
       price: 410.00,
       image: '/images/products/w2.webp'
     },
     {
       id: 'well3',
       name: 'One Time Bandage',
-      description: 'High-strength vitamin D3 for bone health and immunity',
+        description: 'single-use bandage',
       price: 2.00,
       image: '/images/products/w3.webp'
     },
     {
       id: 'well4',
       name: 'N95 Mask',
-      description: 'Advanced probiotic formula for digestive health',
+        description: 'respirator protective mask',
       price: 45.00,
       image: '/images/products/w4.webp'
     },
     {
       id: 'well5',
       name: 'Odessy',
-      description: 'Hydrolyzed collagen for skin, hair, and joint health',
+        description: 'oral rehydration salts',
       price: 170.00,
       image: '/images/products/w5.webp'
     },
     {
       id: 'well6',
       name: 'ProDentalB Breath Spray',
-      description: 'Essential mineral for muscle function and relaxation',
+        description: 'fresh breath spray',
       price: 255.00,
       image: '/images/products/w6.webp'
     }

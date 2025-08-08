@@ -9,28 +9,28 @@ const OTCMedicineCategory = () => {
     {
       id: 'otc1',
       name: 'Sergel 20mg',
-      description: 'Fast-acting pain relief tablet with added caffeine (No Prescription Required)',
+        description: 'acid reflux relief',
       price: 70.00,
       image: '/images/products/sergel.otc1.webp'
     },
     {
       id: 'otc2',
       name: 'Maxpro 20mg',
-      description: 'All-in-one cold and flu relief syrup (No Prescription Required)',
+        description: 'acid reflux control',
       price: 98.00,
       image: '/images/products/maxpro.otc2.webp'
     },
     {
       id: 'otc3',
       name: 'Monas 10mg',
-      description: 'Advanced fever and pain relief tablets (No Prescription Required)',
+        description: 'asthma allergy relief',
       price: 262.50,
       image: '/images/products/monas.otc3.webp'
     },
     {
       id: 'otc4',
       name: 'Napa Extend 665mg',
-      description: 'Fast-acting headache and muscle pain relief (No Prescription Required)',
+        description: 'extended pain relief',
       price: 24.00,
       image: '/images/products/napaext.otc4.webp'
     },
@@ -38,70 +38,70 @@ const OTCMedicineCategory = () => {
     {
       id: 'otc5',
       name: 'Omidon 10mg',
-      description: 'Antacid gel for quick relief from acidity and indigestion',
+        description: 'acidity relief gel',
       price: 52.50,
       image: '/images/products/omidon.otc5.webp'
     },
     {
       id: 'otc6',
       name: 'Napa Extra 500mg',
-      description: 'Medicated lozenges for sore throat relief',
+        description: 'fever pain relief',
       price: 30.00,
       image: '/images/products/napaextra.otc6.webp'
     },
     {
       id: 'otc7',
       name: 'Seclo 20mg',
-      description: 'Topical cough suppressant for temporary relief of cough and congestion',
+        description: 'stomach acid reduction',
       price: 60.00,
       image: '/images/products/seclo.otc7.webp'
     },
     {
       id: 'otc8',
       name: 'Alatrol 10mg',
-      description: 'Anti-diarrheal medication for fast relief',
+        description: 'diarrhea relief medication',
       price: 30.10,
       image: '/images/products/otc8.webp'
     },
     {
       id: 'otc9',
       name: 'losectil 20mg',
-      description: 'Antihistamine for allergy relief',
+        description: 'gastric acid control',
       price: 50.00,
       image: '/images/products/otc9.webp'
     },
     {
       id: 'otc10',
       name: 'Tufnil 200mg',
-      description: 'Relief for upset stomach, indigestion, and nausea',
+        description: 'indigestion nausea relief',
       price: 100.00,
       image: '/images/products/otc10.webp'
     },
     {
       id: 'otc11',
       name: 'E-Cap 400IU',
-      description: 'Fast-acting, dual relief from heartburn and indigestion',
+        description: 'heartburn indigestion relief',
       price: 105.00,
       image: '/images/products/otc11.webp'
     },
     {
       id: 'otc12',
       name: 'Napa 60ml',
-      description: 'Antacid tablets for fast heartburn relief',
+        description: 'children fever relief',
       price: 35.00,
       image: '/images/products/otc12.webp'
     },
     {
       id: 'otc13',
       name: 'Deslor 5 mg',
-      description: 'Fast pain relief for headaches, muscle aches, and minor arthritis',
+        description: 'fast pain relief',
       price: 50.00,
       image: '/images/products/otc13.webp'
     },
     {
       id: 'otc14',
       name: 'Xorel 20 mg',
-      description: 'Cough suppressant drops for temporary relief',
+        description: 'cough suppressant drops',
       price: 40.00,
       image: '/images/products/otc14.webp'
     }

@@ -9,35 +9,35 @@ const HealthHygieneCategory = () => {
     {
       id: 'hyg1',
       name: 'Sepnil Hand Sanitizer',
-      description: 'Instant Hand Sanitizer with Moisturizer (200ml)',
+        description: 'instant hand sanitizer',
       price: 250.00,
       image: '/images/products/hh1.jpg'
     },
     {
       id: 'hyg2',
       name: 'Dettol Liquid',
-      description: 'Antiseptic Liquid for cuts and wounds (500ml)',
+        description: 'antiseptic liquid cleanser',
       price: 60.00,
       image: '/images/products/hh2.webp'
     },
     {
       id: 'hyg3',
       name: 'Godrej AER Power',
-      description: 'Povidone-Iodine Antiseptic Solution (100ml)',
+        description: 'iodine antiseptic solution',
       price: 75.00,
       image: '/images/products/hh3.webp'
     },
     {
       id: 'hyg4',
       name: 'Sparkbliss Aquacool',
-      description: 'Fever and Pain Relief Tablets (10 tablets/strip)',
+        description: 'air freshener spray',
       price: 210.00,
       image: '/images/products/hh4.webp'
     },
     {
       id: 'hyg5',
       name: 'Sparkbliss Lavender',
-      description: 'Immune Support Supplement (30 tablets/bottle)',
+        description: 'lavender air freshener',
       price: 150.00,
       image: '/images/products/hh5.png'
     }

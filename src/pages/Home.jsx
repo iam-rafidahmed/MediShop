@@ -52,7 +52,7 @@ const Home = () => {
     {
       id: 1,
       name: "Sergel 20mg",
-      description: "Paracetamol Tablets",
+      description: "acid reflux relief",
       price: 70.00,
      
       image: "/images/products/sergel.otc1.webp"
@@ -60,7 +60,7 @@ const Home = () => {
     {
       id: 2,
       name: "Napa Extra 500mg",
-      description: "Fast Acting Pain Relief",
+      description: "fever pain relief",
       price: 30.00,
     
       image: "/images/products/napaextra.otc6.webp"
@@ -68,7 +68,7 @@ const Home = () => {
     {
       id: 3,
       name: "losectil 20mg",
-      description: "Multivitamin Tablets",
+      description: "gastric acid control",
       price: 50.00,
 
       image: "/images/products/otc9.webp"
@@ -76,7 +76,7 @@ const Home = () => {
     {
       id: 4,
       name: "Napa 60ml",
-      description: "Calcium & Vitamin D3",
+      description: "children fever relief",
       price: 35.00,
    
       image: "/images/products/otc12.webp"
@@ -84,7 +84,7 @@ const Home = () => {
     {
       id: 5,
       name: "Xorel 20 mg",
-      description: "Azithromycin Tablets",
+      description: "bacterial infection treatment",
       price: 40.00,
     
       image: "/images/products/otc14.webp"
@@ -92,7 +92,7 @@ const Home = () => {
     {
       id: 6,
       name: "Montex10 mg",
-      description: "Levocetirizine & Montelukast",
+      description: "allergy asthma control",
       price: 160.00,
       
       image: "/images/products/Montex10 mg.webp"
@@ -100,7 +100,7 @@ const Home = () => {
     {
       id: 7,
       name: "Omidon 10mg",
-      description: "Vitamin C Chewable Tablets",
+      description: "stomach acid relief",
       price: 52.50,
 
       image: "/images/products/omidon.otc5.webp"
@@ -108,7 +108,7 @@ const Home = () => {
     {
       id: 8,
       name: "Lijenta 5mg",
-      description: "B-Complex Capsules",
+      description: "diabetes DPP-4 inhibitor",
       price: 330.00,
     
       image: "/images/products/p9.webp"
@@ -116,7 +116,7 @@ const Home = () => {
     {
       id: 9,
       name: "Maxpro 20mg",
-      description: "Omeprazole Capsules",
+      description: "GERD acid relief",
       price: 45.00,
     
       image: "/images/products/maxpro.otc2.webp"
@@ -124,7 +124,7 @@ const Home = () => {
     {
       id: 10,
       name: "Monas 10mg",
-      description: "Montelukast Tablets",
+      description: "asthma allergy relief",
       price: 180.00,
     
       image: "/images/products/monas.otc3.webp"
@@ -132,7 +132,7 @@ const Home = () => {
     {
       id: 11,
       name: "Seclo 20mg",
-      description: "Pantoprazole Tablets",
+      description: "stomach acid reduction",
       price: 55.00,
     
       image: "/images/products/seclo.otc7.webp"
@@ -140,7 +140,7 @@ const Home = () => {
     {
       id: 12,
       name: "Deslor 5 mg",
-      description: "Fexofenadine Tablets",
+      description: "allergic rhinitis relief",
       price: 50.00,
     
       image: "/images/products/otc13.webp"
@@ -151,7 +151,7 @@ const Home = () => {
     {
       id: 1,
       name: "Ecosprin 75mg",
-      description: "Aspirin Tablets",
+      description: "heart disease prevention",
       price: 8.00,
 
       image: "/images/products/p1.webp"
@@ -159,7 +159,7 @@ const Home = () => {
     {
       id: 2,
       name: "Napa Extend",
-      description: "Levothyroxine Sodium Tablets",
+      description: "long-lasting pain relief",
       price: 24.00,
 
       image: "/images/products/napaext.otc4.webp"
@@ -167,14 +167,14 @@ const Home = () => {
     {
       id: 3,
       name: "Ace XR665 mg",
-      description: "Vitamin B Complex Tablets",
+      description: "arthritis pain relief",
       price: 20.00,
       image: "/images/products/ace-xr-665-mg.webp"
     },
     {
       id: 4,
       name: "Azithromycin 500",
-      description: "Pantoprazole & Domperidone",
+      description: "respiratory infection treatment",
       price: 240.00,
     
       image: "/images/products/Azithromycin.webp"
@@ -189,7 +189,7 @@ const Home = () => {
     <div className="home-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h2 className="section-title">Top Picks for You</h2>
+          <h2 className="section-title top-picks-title">Top Picks for You</h2>
           <p className="section-subtitle">Most trusted medicines by our customers</p>
           <div className="auto-scroll-container">
             <div className="auto-scroll-content">

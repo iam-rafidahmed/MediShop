@@ -134,6 +134,8 @@
 
 .cart-actions {
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .clear-cart-btn {

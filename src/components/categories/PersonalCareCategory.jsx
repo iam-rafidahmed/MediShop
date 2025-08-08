@@ -9,49 +9,49 @@ const PersonalCareCategory = () => {
     {
       id: 'care1',
       name: 'Select-Plus',
-      description: 'Gentle pH-balanced facial cleanser for all skin types',
+        description: 'gentle facial cleanser',
       price: 200.00,
       image: '/images/products/pc1.webp'
     },
     {
       id: 'care2',
       name: 'Isabgul Plus',
-      description: '24-hour hydration body lotion with natural oils',
+        description: 'fiber digestive supplement',
       price: 495.00,
       image: '/images/products/pc2.webp'
     },
     {
       id: 'care3',
       name: 'Sunmask',
-      description: 'Advanced formula with retinol and vitamin C for youthful skin',
+        description: 'broad spectrum sunscreen',
       price: 250.00,
       image: '/images/products/pc3.webp'
     },
     {
       id: 'care4',
       name: 'Absorbent Cotton Wool',
-      description: 'Broad-spectrum protection with lightweight, non-greasy formula',
+        description: 'soft medical cotton',
       price: 25.00,
       image: '/images/products/pc4.webp'
     },
     {
       id: 'care5',
       name: 'Moov Cream Indian',
-      description: 'Intensive moisturizing hand cream with shea butter',
+        description: 'pain relief cream',
       price: 280.00,
       image: '/images/products/pc5.webp'
     },
     {
       id: 'care6',
       name: 'Acne-Aid',
-      description: 'Nourishing body wash with natural extracts and vitamins',
+        description: 'acne control cleanser',
       price: 310.00,
       image: '/images/products/pc6.webp'
     },
     {
       id: 'care7',
       name: 'Moov Spray Indian',
-      description: 'Hydrating lip balm with SPF 15 protection',
+        description: 'pain relief spray',
       price: 522.00,
       image: '/images/products/pc7.webp'
     }

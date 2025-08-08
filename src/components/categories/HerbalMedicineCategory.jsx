@@ -9,49 +9,49 @@ const HerbalMedicineCategory = () => {
     {
       id: 'herb1',
       name: 'Adovas200 ml',
-      description: 'Natural blood purifier and immunity booster from neem leaves',
+        description: 'herbal cough syrup',
       price: 110.00,
       image: '/images/products/he1.webp'
     },
     {
       id: 'herb2',
       name: 'Devas100 ml',
-      description: 'Pure organic turmeric powder for natural anti-inflammatory benefits',
+        description: 'herbal cough remedy',
       price: 70.00,
       image: '/images/products/he2.webp'
     },
     {
       id: 'herb3',
       name: 'Spirucap 500mg',
-      description: 'Pure aloe vera gel for skin health and digestive support',
+        description: 'spirulina nutrition supplement',
       price: 240.00,
       image: '/images/products/he3.webp'
     },
     {
       id: 'herb4',
       name: 'Safi 450ml',
-      description: 'Natural ginger tea for digestion and immune support',
+        description: 'herbal blood purifier',
       price: 230.00,
       image: '/images/products/he4.webp'
     },
     {
       id: 'herb5',
       name: 'AmCivit100 ml',
-      description: 'Natural honey and lemon blend for throat and immunity',
+        description: 'vitamin c tonic',
       price: 60.00,
       image: '/images/products/he5.webp'
     },
     {
       id: 'herb6',
       name: 'Alocap 100mg',
-      description: 'Sacred basil leaves for respiratory health and stress relief',
+        description: 'aloe vera capsules',
       price: 80.00,
       image: '/images/products/he6.webp'
     },
     {
       id: 'herb7',
       name: 'Alkuli 450ml',
-      description: 'Indian gooseberry powder rich in vitamin C and antioxidants',
+        description: 'alkaline digestive syrup',
       price: 180.00,
       image: '/images/products/he7.webp'
     }

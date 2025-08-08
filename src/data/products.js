@@ -6,36 +6,36 @@ export const getAllProducts = () => {
     // Combine products from all category components
     const products = [
       // Top Picks for You - Popular Medicines (from Home.jsx)
-      {id: 'top1', name: 'Sergel 20mg', category: 'Top Picks', description: 'Paracetamol Tablets', price: 70.00, image: '/images/products/sergel.otc1.webp'},
-      {id: 'top2', name: 'Napa Extra 500mg', category: 'Top Picks', description: 'Fast Acting Pain Relief', price: 30.00, image: '/images/products/napaextra.otc6.webp'},
-      {id: 'top3', name: 'losectil 20mg', category: 'Top Picks', description: 'Multivitamin Tablets', price: 50.00, image: '/images/products/otc9.webp'},
-      {id: 'top4', name: 'Napa 60ml', category: 'Top Picks', description: 'Calcium & Vitamin D3', price: 35.00, image: '/images/products/otc12.webp'},
-      {id: 'top5', name: 'Xorel 20 mg', category: 'Top Picks', description: 'Azithromycin Tablets', price: 40.00, image: '/images/products/otc14.webp'},
-      {id: 'top6', name: 'Montex10 mg', category: 'Top Picks', description: 'Levocetirizine & Montelukast', price: 160.00, image: '/images/products/Montex10 mg.webp'},
-      {id: 'top7', name: 'Omidon 10mg', category: 'Top Picks', description: 'Vitamin C Chewable Tablets', price: 52.50, image: '/images/products/omidon.otc5.webp'},
-      {id: 'top8', name: 'Lijenta 5mg', category: 'Top Picks', description: 'B-Complex Capsules', price: 330.00, image: '/images/products/p9.webp'},
-      {id: 'top9', name: 'Maxpro 20mg', category: 'Top Picks', description: 'Omeprazole Capsules', price: 45.00, image: '/images/products/maxpro.otc2.webp'},
-      {id: 'top10', name: 'Monas 10mg', category: 'Top Picks', description: 'Montelukast Tablets', price: 180.00, image: '/images/products/monas.otc3.webp'},
-      {id: 'top11', name: 'Seclo 20mg', category: 'Top Picks', description: 'Pantoprazole Tablets', price: 55.00, image: '/images/products/seclo.otc7.webp'},
-      {id: 'top12', name: 'Deslor 5 mg', category: 'Top Picks', description: 'Fexofenadine Tablets', price: 50.00, image: '/images/products/otc13.webp'},
+      {id: 'top1', name: 'Sergel 20mg', category: 'Top Picks', description: 'acid reflux relief', price: 70.00, image: '/images/products/sergel.otc1.webp'},
+      {id: 'top2', name: 'Napa Extra 500mg', category: 'Top Picks', description: 'fever pain relief', price: 30.00, image: '/images/products/napaextra.otc6.webp'},
+      {id: 'top3', name: 'losectil 20mg', category: 'Top Picks', description: 'gastric acid control', price: 50.00, image: '/images/products/otc9.webp'},
+      {id: 'top4', name: 'Napa 60ml', category: 'Top Picks', description: 'children fever relief', price: 35.00, image: '/images/products/otc12.webp'},
+      {id: 'top5', name: 'Xorel 20 mg', category: 'Top Picks', description: 'bacterial infection treatment', price: 40.00, image: '/images/products/otc14.webp'},
+      {id: 'top6', name: 'Montex10 mg', category: 'Top Picks', description: 'allergy asthma control', price: 160.00, image: '/images/products/Montex10 mg.webp'},
+      {id: 'top7', name: 'Omidon 10mg', category: 'Top Picks', description: 'stomach acid relief', price: 52.50, image: '/images/products/omidon.otc5.webp'},
+      {id: 'top8', name: 'Lijenta 5mg', category: 'Top Picks', description: 'allergy symptom relief', price: 330.00, image: '/images/products/p9.webp'},
+      {id: 'top9', name: 'Maxpro 20mg', category: 'Top Picks', description: 'GERD acid relief', price: 45.00, image: '/images/products/maxpro.otc2.webp'},
+      {id: 'top10', name: 'Monas 10mg', category: 'Top Picks', description: 'asthma allergy relief', price: 180.00, image: '/images/products/monas.otc3.webp'},
+      {id: 'top11', name: 'Seclo 20mg', category: 'Top Picks', description: 'stomach acid reduction', price: 55.00, image: '/images/products/seclo.otc7.webp'},
+      {id: 'top12', name: 'Deslor 5 mg', category: 'Top Picks', description: 'allergic rhinitis relief', price: 50.00, image: '/images/products/otc13.webp'},
 
       // Doctor Recommended Medicines (from Home.jsx)
-      {id: 'doc1', name: 'Ecosprin 75mg', category: 'Doctor Recommended', description: 'Aspirin Tablets', price: 8.00, image: '/images/products/p1.webp'},
-      {id: 'doc2', name: 'Napa Extend', category: 'Doctor Recommended', description: 'Levothyroxine Sodium Tablets', price: 24.00, image: '/images/products/napaext.otc4.webp'},
-      {id: 'doc3', name: 'Ace XR665 mg', category: 'Doctor Recommended', description: 'Vitamin B Complex Tablets', price: 20.00, image: '/images/products/ace-xr-665-mg.webp'},
-      {id: 'doc4', name: 'Azithromycin 500', category: 'Doctor Recommended', description: 'Pantoprazole & Domperidone', price: 240.00, image: '/images/products/Azithromycin.webp'},
+      {id: 'doc1', name: 'Ecosprin 75mg', category: 'Doctor Recommended', description: 'heart disease prevention', price: 8.00, image: '/images/products/p1.webp'},
+      {id: 'doc2', name: 'Napa Extend', category: 'Doctor Recommended', description: 'long-lasting pain relief', price: 24.00, image: '/images/products/napaext.otc4.webp'},
+      {id: 'doc3', name: 'Ace XR665 mg', category: 'Doctor Recommended', description: 'arthritis pain relief', price: 20.00, image: '/images/products/ace-xr-665-mg.webp'},
+      {id: 'doc4', name: 'Azithromycin 500', category: 'Doctor Recommended', description: 'respiratory infection treatment', price: 240.00, image: '/images/products/Azithromycin.webp'},
 
       // OTC Medicine Products (from OTCMedicineCategory.jsx) - Removed duplicates that are in Top Picks
-      {id: 'otc8', name: 'Alatrol 10mg', category: 'OTC Medicine', description: 'Anti-diarrheal medication for fast relief', price: 30.10, image: '/images/products/otc8.webp'},
+      {id: 'otc8', name: 'Alatrol 10mg', category: 'OTC Medicine', description: 'diarrhea relief medication', price: 30.10, image: '/images/products/otc8.webp'},
 
       // Prescribe Medicine Products (from PrescribeMedicineCategory.jsx) - Removed Ecosprin duplicate
-      {id: 'pres2', name: 'Bizoran 5mg+20mg', category: 'Prescribe Medicine', description: 'Blood pressure medication tablets (Prescription Required)', price: 180.09, image: '/images/products/p2.webp'},
-      {id: 'pres3', name: 'Thyrox 50mcg', category: 'Prescribe Medicine', description: 'Cholesterol-lowering medication (Prescription Required)', price: 66.00, image: '/images/products/p3.webp'},
-      {id: 'pres4', name: 'Uromax 0.4mg', category: 'Prescribe Medicine', description: 'Thyroid hormone replacement (Prescription Required)', price: 60.00, image: '/images/products/p4.webp'},
-      {id: 'pres5', name: 'Comet 500mg', category: 'Prescribe Medicine', description: 'Antidepressant medication (Prescription Required)', price: 50.00, image: '/images/products/p5.webp'},
-      {id: 'pres6', name: 'Uromax-D 0.4mg+0.5mg', category: 'Prescribe Medicine', description: 'Angiotensin II receptor blocker for hypertension (Prescription Required)', price: 115.00, image: '/images/products/p6.webp'},
-      {id: 'pres7', name: 'Febustat 40mg', category: 'Prescribe Medicine', description: 'Beta-blocker for high blood pressure and angina (Prescription Required)', price: 130.00, image: '/images/products/p7.webp'},
-      {id: 'pres8', name: 'Metacard MR 35mg', category: 'Prescribe Medicine', description: 'Selective serotonin reuptake inhibitor for depression (Prescription Required)', price: 140.00, image: '/images/products/p8.webp'},
+      {id: 'pres2', name: 'Bizoran 5mg+20mg', category: 'Prescribe Medicine', description: 'blood pressure control', price: 180.09, image: '/images/products/p2.webp'},
+      {id: 'pres3', name: 'Thyrox 50mcg', category: 'Prescribe Medicine', description: 'cholesterol lowering medication', price: 66.00, image: '/images/products/p3.webp'},
+      {id: 'pres4', name: 'Uromax 0.4mg', category: 'Prescribe Medicine', description: 'thyroid hormone replacement', price: 60.00, image: '/images/products/p4.webp'},
+      {id: 'pres5', name: 'Comet 500mg', category: 'Prescribe Medicine', description: 'antidepressant medication required', price: 50.00, image: '/images/products/p5.webp'},
+      {id: 'pres6', name: 'Uromax-D 0.4mg+0.5mg', category: 'Prescribe Medicine', description: 'hypertension treatment support', price: 115.00, image: '/images/products/p6.webp'},
+      {id: 'pres7', name: 'Febustat 40mg', category: 'Prescribe Medicine', description: 'blood pressure management', price: 130.00, image: '/images/products/p7.webp'},
+      {id: 'pres8', name: 'Metacard MR 35mg', category: 'Prescribe Medicine', description: 'depression treatment ssri', price: 140.00, image: '/images/products/p8.webp'},
 
       // Personal Care Products (from PersonalCareCategory.jsx)
       {id: 'care1', name: 'Select-Plus', category: 'Personal Care', description: 'Gentle pH-balanced facial cleanser for all skin types', price: 200.00, image: '/images/products/pc1.webp'},
